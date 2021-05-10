@@ -1,5 +1,5 @@
-@import "~bootstrap/scss/bootstrap.scss";
-@import url("https://fonts.googleapis.com/css?family=Lato:300,400,700");
+@import '~bootstrap/scss/bootstrap.scss';
+@import url('https://fonts.googleapis.com/css?family=Lato:300,400,700');
 
 /*****************STARTS TOP BACKGROUND SECTION***************/
 #stars {
@@ -184,7 +184,7 @@
     69px 1852px #fff, 878px 300px #fff, 730px 726px #fff, 1137px 68px #fff;
   animation: animStar 50s linear infinite;
   &:after {
-    content: " ";
+    content: ' ';
     position: relative;
     top: 2000px;
     width: 1px;
@@ -442,7 +442,7 @@
     782px 598px #fff, 1709px 1377px #fff, 717px 1040px #fff;
   animation: animStar 100s linear infinite;
   &:after {
-    content: " ";
+    content: ' ';
     position: relative;
     top: 2000px;
     width: 2px;
@@ -537,7 +537,7 @@
     1747px 1800px #fff;
   animation: animStar 150s linear infinite;
   &:after {
-    content: "";
+    content: '';
     position: relative;
     top: 2000px;
     width: 3px;
@@ -684,7 +684,7 @@
 }
 
 .testbg {
-  background-image: url("../img/Vmarine.jpg");
+  background-image: url('../img/Vmarine.jpg');
   height: 400px;
   background-position: center;
   background-repeat: no-repeat;
@@ -692,14 +692,14 @@
 }
 
 .aguabg {
-  background-image: url("../img/aguaDeLuz.png");
+  background-image: url('../img/aguaDeLuz.png');
   height: 400px;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
 }
 .todobg {
-  background-image: url("../img/todolist.png");
+  background-image: url('../img/todolist.png');
   height: 400px;
   background-position: center;
   background-repeat: no-repeat;
