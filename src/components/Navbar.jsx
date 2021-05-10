@@ -1,5 +1,6 @@
 import React, { useEffect, useRef, useState } from "react";
 import Background from "./Background";
+import nav_logo from "../img/logo-removebg.png";
 
 const Navbar = () => {
   const navRef = useRef(null);
@@ -43,6 +44,7 @@ const Navbar = () => {
               });
             }}
           >
+            <img className="nav-logo" src={nav_logo} alt="logo"></img>
             Back to Space
           </a>
           <button
