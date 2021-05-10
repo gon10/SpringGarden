@@ -1,18 +1,37 @@
-import React from "react";
+import React, { useEffect, useRef, useState } from "react";
 import Background from "./Background";
 
 const Navbar = () => {
+  const navRef = useRef(null);
+  const [scrolled, setScrolled] = useState(false);
+
+  const handleScroll = e => {
+    if (navRef.current) {
+      console.log(
+        "navRef.current.getBoundingClientRect().height",
+        navRef.current.getBoundingClientRect().height
+      );
+      console.log("window.scroll", window.scrollY);
+      setScrolled(
+        window.scrollY > 2 * navRef.current.getBoundingClientRect().height
+      );
+    }
+  };
+
+  useEffect(() => {
+    window.addEventListener("scroll", handleScroll);
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
   return (
     <div>
-      <Background
-        // ref={this.navEffect}
-        id="my-background"
-        // aboutRef={this.about}
-        bounceIn={"wow bounceIn"}
-      />
       <nav
+        ref={navRef}
         id="navbar"
-        className="navbar navbar-expand-lg navbar-light bg-light"
+        className={`navbar navbar-expand-lg navbar-dark ${
+          scrolled ? "fade-in-nav" : ""
+        }`}
       >
         <div className="container">
           <a
@@ -67,6 +86,12 @@ const Navbar = () => {
           </div>
         </div>
       </nav>
+      <Background
+        // ref={this.navEffect}
+        id="my-background"
+        // aboutRef={this.about}
+        bounceIn={"wow bounceIn"}
+      />
     </div>
   );
 };

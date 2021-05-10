@@ -9,9 +9,9 @@ const Background = () => {
         <div id="stars3" />
         <div className="top-container flex">
           <h1>
-            Hello, I&apos;m Frank Izquierdo.
+            Welcome to.
             <br />
-            I&apos;m a Full Stack Web Developer.
+            Spring Garden Residences.
           </h1>
           {/* offset can be cahnged in node modules wowjs default file */}
           <button
