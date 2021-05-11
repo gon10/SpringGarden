@@ -45,7 +45,6 @@ const Navbar = () => {
             }}
           >
             <img className="nav-logo" src={nav_logo} alt="logo"></img>
-            Back to Space
           </a>
           <button
             className="navbar-toggler"
@@ -66,7 +65,7 @@ const Navbar = () => {
                 }}
                 className="btn-style nav-item nav-link"
               >
-                About
+                Home
               </a>
               <a
                 onClick={() => {
@@ -74,7 +73,15 @@ const Navbar = () => {
                 }}
                 className="btn-style nav-item nav-link"
               >
-                Projects
+                Tipologias
+              </a>
+              <a
+                onClick={() => {
+                  this.scrolling(this.projects);
+                }}
+                className="btn-style nav-item nav-link"
+              >
+                Localização
               </a>
               <a
                 onClick={() => {
@@ -82,7 +89,7 @@ const Navbar = () => {
                 }}
                 className="btn-style nav-item nav-link"
               >
-                Contact
+                Contactos
               </a>
             </div>
           </div>
