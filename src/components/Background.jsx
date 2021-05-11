@@ -1,4 +1,6 @@
 import React from "react";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faChevronDown } from "@fortawesome/free-solid-svg-icons";
 
 const Background = () => {
   return (
@@ -15,7 +17,7 @@ const Background = () => {
           </h1>
           {/* offset can be cahnged in node modules wowjs default file */}
           <button
-            className={"work-button "}
+            className="background-arrow-button"
             data-wow-offset="0"
             onClick={() => {
               // let node = document.getElementById(
@@ -27,7 +29,10 @@ const Background = () => {
               // });
             }}
           >
-            View my work
+            <FontAwesomeIcon
+              className="background-arrow-icon"
+              icon={faChevronDown}
+            />
           </button>
         </div>
       </div>

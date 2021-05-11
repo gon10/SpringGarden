@@ -668,7 +668,18 @@
 
 .nav-logo {
   height: auto;
-  width: 100px;
+  width: 75px;
+}
+
+.background-arrow-button {
+  border: none;
+  background: none;
+}
+
+.background button svg {
+  margin-top: 30px;
+  font-size: 34px;
+  color: #c7ab62;
 }
 
 .fade-in-nav {
