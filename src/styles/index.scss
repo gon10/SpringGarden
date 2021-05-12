@@ -663,7 +663,9 @@
 }
 
 .navbar {
-  background-color: #19452d;
+  background: rgba(0, 0, 0, 0.4);
+  position: absolute;
+  width: 100vw;
 }
 
 .nav-logo {

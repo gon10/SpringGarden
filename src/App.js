@@ -8,13 +8,13 @@ function App() {
   return (
     <div>
       <Navbar />
-      <div className="container">
+      <div className="container-fluid">
         <ImageText
           image={image}
           title={"title"}
           summary={"summary"}
           direction="left"
-          bgcolor="#ffc107"
+          bgcolor="#FEFBEA"
         ></ImageText>
 
         <ImageText
@@ -22,7 +22,7 @@ function App() {
           title={"title 2 "}
           summary={"summary 2 "}
           direction="right"
-          bgcolor="#c2ff07"
+          bgcolor="#afd4b6b0"
         ></ImageText>
       </div>
       <Test></Test>
