@@ -33,6 +33,18 @@ const ImageText = props => {
           </>
         );
         break;
+        case "top":
+          return (
+            <>
+              <div class="col-12 col-md-12 d-flex flex-column justify-content-around align-items-center">
+                <h4>{title}</h4>
+                <p>{summary}</p>
+                <button>Saiba mais</button>
+                <img src={image} alt="image" className="w-100"></img>
+              </div>
+            </>
+          );
+          break;
 
       default:
         return (

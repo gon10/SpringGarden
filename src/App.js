@@ -24,6 +24,14 @@ function App() {
           direction="right"
           bgcolor="#afd4b6b0"
         ></ImageText>
+
+        <ImageText
+          image={image}
+          title={"A Mariana é linda"}
+          summary={"O Gonçalo gosta muito da Mariana"}
+          direction="top"
+          bgcolor="#f072f1"
+        ></ImageText>
       </div>
       <Test></Test>
     </div>
