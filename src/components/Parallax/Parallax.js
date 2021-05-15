@@ -8,6 +8,7 @@ import { makeStyles } from "@material-ui/core/styles";
 
 // core components
 import styles from "assets/jss/material-kit-react/components/parallaxStyle.js";
+import Background from "components/Background";
 
 const useStyles = makeStyles(styles);
 
@@ -42,18 +43,30 @@ export default function Parallax(props) {
     [classes.filter]: filter,
     [classes.small]: small,
     [className]: className !== undefined,
+    background: true
   });
   return (
-    <div
-      className={parallaxClasses}
-      style={{
-        ...style,
-        backgroundImage: "url(" + image + ")",
-        transform: transform,
-      }}
-    >
-      {children}
-    </div>
+    <>
+      <div
+        className={parallaxClasses}
+        style={{
+          ...style,
+          backgroundImage: "url(" + image + ")",
+          transform: transform
+        }}
+      >
+        <div id="stars" />
+        <div id="stars2" />
+        <div id="stars3" />
+        {children}
+      </div>
+      {/* <Background
+        // ref={this.navEffect}
+        id="my-background"
+        // aboutRef={this.about}
+        bounceIn={"wow bounceIn"} 
+      />*/}
+    </>
   );
 }
 
@@ -63,5 +76,5 @@ Parallax.propTypes = {
   children: PropTypes.node,
   style: PropTypes.string,
   image: PropTypes.string,
-  small: PropTypes.bool,
+  small: PropTypes.bool
 };
