@@ -1,4 +1,5 @@
 import React from "react";
+import Button from "components/CustomButtons/Button.js";
 
 const ImageText = props => {
   const { image, direction, title, summary, bgcolor } = props;
@@ -11,7 +12,9 @@ const ImageText = props => {
             <div class="col-12 col-md-6 d-flex flex-column justify-content-around align-items-center">
               <h4>{title}</h4>
               <p>{summary}</p>
-              <button>Saiba mais</button>
+              <Button color="success" round>
+                Descubra mais!
+              </Button>
             </div>
             <div class="col-12 col-md-6 ">
               <img src={image} alt="image" className="w-100"></img>
@@ -28,7 +31,9 @@ const ImageText = props => {
             <div class="col-12 col-md-6 d-flex flex-column justify-content-around align-items-center">
               <h4>{title}</h4>
               <p>{summary}</p>
-              <button>Saiba mais</button>
+              <Button color="success" round>
+                Descubra mais!
+              </Button>
             </div>
           </>
         );
@@ -39,7 +44,9 @@ const ImageText = props => {
               <div class="col-12 col-md-12 d-flex flex-column justify-content-around align-items-center">
                 <h4>{title}</h4>
                 <p>{summary}</p>
-                <button>Saiba mais</button>
+                <Button color="primary" round>
+                round
+                </Button>
                 <img src={image} alt="image" className="w-100"></img>
               </div>
             </>

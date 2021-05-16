@@ -10,6 +10,7 @@ import ImageText from "./components/ImageText";
 import Navbar from "./components/Navbar";
 import Test from "./components/Test";
 import image from "./img/inside.jpg";
+//import nav_logo from "../img/logo-removebg.png";
 
 import styles from "assets/jss/material-kit-react/views/components.js";
 
@@ -64,7 +65,7 @@ function App(props) {
         <ImageText
           image={image}
           title={"A Mariana é linda"}
-          summary={"O Gonçalo gosta muito da Mariana"}
+          summary={"O Gonçalo tem uma pila gostosa"}
           direction="top"
           bgcolor="#f072f1"
         ></ImageText>
