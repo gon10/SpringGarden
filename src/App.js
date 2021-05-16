@@ -21,7 +21,7 @@ function App(props) {
   return (
     <div>
       <Header
-        brand="Material Kit React"
+        brand="Spring Garden Residences"
         rightLinks={<HeaderLinks />}
         fixed
         color="transparent"
