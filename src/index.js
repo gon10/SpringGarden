@@ -3,6 +3,7 @@ import ReactDOM from "react-dom";
 import "./index.css";
 import App from "./App";
 import reportWebVitals from "./reportWebVitals";
+import "assets/scss/material-kit-react.scss?v=1.10.0";
 import "./styles/index.scss";
 
 ReactDOM.render(

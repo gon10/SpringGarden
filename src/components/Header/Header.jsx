@@ -16,6 +16,7 @@ import Menu from "@material-ui/icons/Menu";
 // core components
 // import styles from "assets/jss/material-kit-react/components/headerStyle.js";
 import styles from "assets/jss/material-kit-react/components/headerStyle.js";
+import nav_logo from "../../img/logo-removebg.png";
 
 const useStyles = makeStyles(styles);
 
@@ -72,7 +73,20 @@ export default function Header(props) {
               {leftLinks}
             </Hidden>
           ) : (
-            brandComponent
+            <>
+              {/* {brandComponent} */}
+              <a
+                className="home-style navbar-brand"
+                onClick={() => {
+                  window.scrollTo({
+                    top: 0,
+                    behavior: "smooth"
+                  });
+                }}
+              >
+                <img className="nav-logo" src={nav_logo} alt="logo"></img>
+              </a>
+            </>
           )}
         </div>
         <Hidden smDown implementation="css">

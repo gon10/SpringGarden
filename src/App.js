@@ -13,6 +13,7 @@ import image from "./img/inside.jpg";
 //import nav_logo from "../img/logo-removebg.png";
 
 import styles from "assets/jss/material-kit-react/views/components.js";
+import SectionCarousel from "components/Carousel/SectionCarousel";
 
 const useStyles = makeStyles(styles);
 
@@ -46,6 +47,7 @@ function App(props) {
       </Parallax>
       {/* <Navbar /> */}
       <div className={classNames(classes.main, classes.mainRaised)}>
+        <SectionCarousel />
         <ImageText
           image={image}
           title={"title"}
@@ -59,7 +61,7 @@ function App(props) {
           title={"title 2 "}
           summary={"summary 2 "}
           direction="right"
-          bgcolor="#afd4b6b0"
+          bgcolor="white"
         ></ImageText>
 
         <ImageText
@@ -67,7 +69,7 @@ function App(props) {
           title={"A Mariana é linda"}
           summary={"O Gonçalo tem uma pila gostosa"}
           direction="top"
-          bgcolor="#f072f1"
+          bgcolor="#FEFBEA"
         ></ImageText>
       </div>
       <Test></Test>
