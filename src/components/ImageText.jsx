@@ -12,9 +12,7 @@ const ImageText = props => {
             <div class="col-12 col-md-6 d-flex flex-column justify-content-center align-items-center">
               <h4>{title}</h4>
               <p>{summary}</p>
-              <Button color="success" round>
-                Descubra mais!
-              </Button>
+              <button>Descubra mais!</button>
             </div>
             <div class="col-12 col-md-6 ">
               <img src={image} alt="image" className="w-100"></img>
@@ -31,9 +29,7 @@ const ImageText = props => {
             <div class="col-12 col-md-6 d-flex flex-column justify-content-center align-items-center">
               <h4>{title}</h4>
               <p>{summary}</p>
-              <Button color="success" round>
-                Descubra mais!
-              </Button>
+              <button>Descubra mais!</button>
             </div>
           </>
         );
@@ -44,9 +40,7 @@ const ImageText = props => {
             <div class="col-12 col-md-12 d-flex flex-column justify-content-center align-items-center">
               <h4>{title}</h4>
               <p>{summary}</p>
-              <Button color="primary" round>
-                round
-              </Button>
+              <button>Descubra mais!</button>
               <img src={image} alt="image" className="w-100"></img>
             </div>
           </>

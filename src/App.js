@@ -10,7 +10,8 @@ import ImageText from "./components/ImageText";
 import Navbar from "./components/Navbar";
 import Test from "./components/Test";
 import image from "./img/inside.jpg";
-//import nav_logo from "../img/logo-removebg.png";
+import image2 from "./img/boavista.jpg";
+
 
 import styles from "assets/jss/material-kit-react/views/components.js";
 import SectionCarousel from "components/Carousel/SectionCarousel";
@@ -50,25 +51,25 @@ function App(props) {
         <SectionCarousel />
         <ImageText
           image={image}
-          title={"title"}
-          summary={"summary"}
+          title={"SOLUÇÕES ADEQUADAS AO SEU ESTILO DE VIDA!"}
+          summary={"EdifÍcio de cor serena dotado de uma arquitectura contemporânea e integrando extensos jardins. Com Apartamentos de Tipologia T1, T2, T3 e T4, este bloco de apartamentos tem tudo para se tornar a sua nova casa"}
           direction="left"
           bgcolor="#FEFBEA"
         ></ImageText>
 
         <ImageText
-          image={image}
-          title={"title 2 "}
-          summary={"summary 2 "}
+          image={image2}
+          title={"ADIRA AO ESTILO DE VIDA DA BOAVISTA!"}
+          summary={"O empreendimento Spring Garden Residences está a nascer na Boavista. Localizado numa importante artéria do Porto, bastante próximo da baiixa da cidade e das magníficas praias."}
           direction="right"
           bgcolor="white"
         ></ImageText>
 
         <ImageText
           image={image}
-          title={"A Mariana é linda"}
-          summary={"O Gonçalo tem uma pila gostosa"}
-          direction="top"
+          title={"O VERDADEIRO LUXO ESTÁ NOS DETALHES!"}
+          summary={"O nível dos acabamentos acompanha a qualidade de construção através da adoção de soluções construtivas de eficácia comprovada e da seleção de materiais de marcas conceituadas e de qualidade altíssima."}
+          direction="left"
           bgcolor="#FEFBEA"
         ></ImageText>
       </div>

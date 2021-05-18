@@ -34,10 +34,10 @@ export default function SectionCarousel() {
         <GridContainer>
           <GridItem xs={12} sm={12} md={8} className={classes.marginAuto}>
             <div className="d-flex flex-column justify-content-around align-items-center text-center">
-              <h1>O Spring Residences está a nascer</h1>
+              <h1>O Spring Garden Residences está a nascer!</h1>
               <h5>
-                Concebido para famílias que valorizam a exclusividade, o
-                conforto e a tranquilidade numa localização privilegiada
+                Um projecto com características únicas concebido para famílias que valorizam a exclusividade, o
+                conforto e a tranquilidade numa localização privilegiada.
                 <br />
                 Descubra!
               </h5>
