@@ -700,6 +700,23 @@ button:hover {
   width: 200px;
 }
 
+footer h3 {
+  color: #c7ab62;
+}
+
+.info {
+  border-radius: 50%;
+  padding: 20px;
+  -webkit-transition: all 500ms ease-out 1s;
+  -moz-transition: all 500ms ease-out 1s;
+  -o-transition: all 500ms ease-out 1s;
+  transition: all 500ms ease-out 1s;
+}
+
+.info:hover {
+  background-image: radial-gradient(white, white, #c7ab62);
+}
+
 .background-arrow-button {
   border: none;
   background: none;
