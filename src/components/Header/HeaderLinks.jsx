@@ -53,7 +53,7 @@ export default function HeaderLinks(props) {
           href="https://www.creative-tim.com/product/material-kit-react?ref=mkr-navbar"
           color="transparent"
           target="_blank"
-          className={classes.navLink}
+          className={classes.navLink, "mariana1"}
         >
           Home
         </Button>
@@ -63,17 +63,17 @@ export default function HeaderLinks(props) {
           href="https://www.creative-tim.com/product/material-kit-react?ref=mkr-navbar"
           color="transparent"
           target="_blank"
-          className={classes.navLink}
+          className={classes.navLink, "mariana1"}
         >
           Tipologias
         </Button>
       </ListItem>
       <ListItem className={classes.listItem}>
-      <Button
+      <Button 
           href="https://www.creative-tim.com/product/material-kit-react?ref=mkr-navbar"
           color="transparent"
           target="_blank"
-          className={classes.navLink}
+          className={classes.navLink, "mariana1"}
         >
           Localização
         </Button>
@@ -83,7 +83,7 @@ export default function HeaderLinks(props) {
           href="https://www.creative-tim.com/product/material-kit-react?ref=mkr-navbar"
           color="transparent"
           target="_blank"
-          className={classes.navLink}
+          className={classes.navLink, "mariana1"}
         >
           Acabamentos
         </Button>
@@ -94,7 +94,7 @@ export default function HeaderLinks(props) {
           href="https://www.creative-tim.com/product/material-kit-react?ref=mkr-navbar"
           color="transparent"
           target="_blank"
-          className={classes.navLink}
+          className={classes.navLink, "mariana1"}
         >
           Contactos
         </Button>
