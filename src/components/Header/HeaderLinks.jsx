@@ -49,58 +49,62 @@ export default function HeaderLinks(props) {
           ]}
         /> */}
       </ListItem>
-      <ListItem className={classes.listItem}><Button
-          href="https://www.creative-tim.com/product/material-kit-react?ref=mkr-navbar"
-          color="transparent"
-          target="_blank"
-          className={classes.navLink, "mariana1"}
-        >
-          Home
-        </Button>
+      <ListItem className={classes.listItem}>
+        <Link className={"nav-buton"} to="/home">
+          <Button
+            color="transparent"
+            target="_blank"
+            className={classes.navLink}
+          >
+            Home
+          </Button>
+        </Link>
       </ListItem>
       <ListItem className={classes.listItem}>
-        <Button
-          href="https://www.creative-tim.com/product/material-kit-react?ref=mkr-navbar"
-          color="transparent"
-          target="_blank"
-          className={classes.navLink, "mariana1"}
-        >
-          Tipologias
-        </Button>
+        <Link className={"nav-buton"} to="/tipologias">
+          <Button
+            color="transparent"
+            target="_blank"
+            className={classes.navLink}
+          >
+            Tipologias
+          </Button>
+        </Link>
       </ListItem>
       <ListItem className={classes.listItem}>
-      <Button 
-          href="https://www.creative-tim.com/product/material-kit-react?ref=mkr-navbar"
-          color="transparent"
-          target="_blank"
-          className={classes.navLink, "mariana1"}
-        >
-          Localização
-        </Button>
+        <Link className={"nav-buton"} to="/localizacao">
+          <Button
+            color="transparent"
+            target="_blank"
+            className={classes.navLink}
+          >
+            Localização
+          </Button>
+        </Link>
       </ListItem>
       <ListItem className={classes.listItem}>
-      <Button
-          href="https://www.creative-tim.com/product/material-kit-react?ref=mkr-navbar"
-          color="transparent"
-          target="_blank"
-          className={classes.navLink, "mariana1"}
-        >
-          Acabamentos
-        </Button>
+        <Link className={"nav-buton"} to="/acabamentos">
+          <Button
+            color="transparent"
+            target="_blank"
+            className={classes.navLink}
+          >
+            Acabamentos
+          </Button>
+        </Link>
       </ListItem>
       <ListItem className={classes.listItem}>
-
-      <Button
-          href="https://www.creative-tim.com/product/material-kit-react?ref=mkr-navbar"
-          color="transparent"
-          target="_blank"
-          className={classes.navLink, "mariana1"}
-        >
-          Contactos
-        </Button>
+        <Link className={"nav-buton"} to="/contactos">
+          <Button
+            color="transparent"
+            target="_blank"
+            className={classes.navLink}
+          >
+            Contactos
+          </Button>
+        </Link>
       </ListItem>
       <ListItem className={classes.listItem}>
-
         {/*<Tooltip title="Delete">
           <IconButton aria-label="Delete">
             <DeleteIcon />

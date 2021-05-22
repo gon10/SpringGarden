@@ -31,7 +31,7 @@ export default function Footer(props) {
   });
   return (
     <>
-      <footer class="footer">
+      {/* <footer class="footer">
         <div class="container bottom_border">
           <div class="row">
             <div class=" col-sm-4 col-md col-sm-4  col-12 col">
@@ -190,7 +190,7 @@ export default function Footer(props) {
             </li>
           </ul>
         </div>
-      </footer>
+      </footer> */}
       <footer className={footerClasses}>
         <div className={classes.container}>
           <div className="row">

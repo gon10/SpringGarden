@@ -15,6 +15,18 @@ import image2 from "./img/boavista.jpg";
 import styles from "assets/jss/material-kit-react/views/components.js";
 import SectionCarousel from "components/Carousel/SectionCarousel";
 import Footer from "components/Footer/Footer";
+import Home from "pages/Home";
+import {
+  BrowserRouter as Router,
+  Switch,
+  Route,
+  Link,
+  Redirect
+} from "react-router-dom";
+import Tipologias from "pages/Tipologias";
+import Localizacao from "pages/Localizacao";
+import Acabamentos from "pages/Acabamentos";
+import Contactos from "pages/Contactos";
 
 const useStyles = makeStyles(styles);
 
@@ -22,7 +34,7 @@ function App(props) {
   const { ...rest } = props;
   const classes = useStyles();
   return (
-    <div>
+    <Router>
       <Header
         brand="Spring Garden Residences"
         rightLinks={<HeaderLinks />}
@@ -46,41 +58,29 @@ function App(props) {
           </GridContainer>
         </div>
       </Parallax>
-      {/* <Navbar /> */}
-      <div className={classNames(classes.main, classes.mainRaised)}>
-        <SectionCarousel />
-        <ImageText
-          image={image}
-          title={"SOLUÇÕES ADEQUADAS AO SEU ESTILO DE VIDA!"}
-          summary={
-            "EdifÍcio de cor serena dotado de uma arquitectura contemporânea e integrando extensos jardins. Com Apartamentos de Tipologia T1, T2, T3 e T4, este bloco de apartamentos tem tudo para se tornar a sua nova casa"
-          }
-          direction="left"
-          bgcolor="#FEFBEA"
-        ></ImageText>
+      <Switch>
+        <Route exact path="/">
+          <Redirect to="/home" />
+        </Route>
+        <Route path="/home">
+          <Home />
+        </Route>
+        <Route path="/tipologias">
+          <Tipologias />
+        </Route>
+        <Route path="/localizacao">
+          <Localizacao />
+        </Route>
 
-        <ImageText
-          image={image2}
-          title={"ADIRA AO ESTILO DE VIDA DA BOAVISTA!"}
-          summary={
-            "O empreendimento Spring Garden Residences está a nascer na Boavista. Localizado numa importante artéria do Porto, bastante próximo da baiixa da cidade e das magníficas praias."
-          }
-          direction="right"
-          bgcolor="white"
-        ></ImageText>
-
-        <ImageText
-          image={image}
-          title={"O VERDADEIRO LUXO ESTÁ NOS DETALHES!"}
-          summary={
-            "O nível dos acabamentos acompanha a qualidade de construção através da adoção de soluções construtivas de eficácia comprovada e da seleção de materiais de marcas conceituadas e de qualidade altíssima."
-          }
-          direction="left"
-          bgcolor="#FEFBEA"
-        ></ImageText>
-      </div>
-      <Footer></Footer>
-    </div>
+        <Route path="/acabamentos">
+          <Acabamentos />
+        </Route>
+        <Route path="/contactos">
+          <Contactos />
+        </Route>
+      </Switch>
+      <Footer />
+    </Router>
   );
 }
 
