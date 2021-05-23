@@ -3,7 +3,7 @@ import React from "react";
 import ImageText from "../components/ImageText";
 import Navbar from "../components/Navbar";
 import Test from "../components/Test";
-import image from "../img/inside.jpg";
+import image from "../img/teste.jpg";
 import image2 from "../img/boavista.jpg";
 import Parallax from "components/Parallax/Parallax";
 import classNames from "classnames";

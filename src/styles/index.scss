@@ -599,7 +599,7 @@
 .background h3 {
   color: #c7ab62;
 }
-/*********************************************************************************/
+/*****Botao descubra mais!**************************************************************************/
 button {
   transition: all 0.5s ease;
   color: #c7ab62;
@@ -640,12 +640,6 @@ p {
   color: #848482;
   text-align: justify;
 }
-
-.nav-buton {
-  color: #c7ab62 !important;
-  text-decoration: none;
-}
-
 .descubramais {
   font-family: 'Quicksand', sans-serif;
   color: #c7ab62;
@@ -653,6 +647,11 @@ p {
   font-weight: bold;
 }
 /*********************************************************************************/
+.nav-buton {
+  color: #c7ab62 !important;
+  text-decoration: none;
+}
+
 .top-container {
   text-align: center;
   position: absolute;
