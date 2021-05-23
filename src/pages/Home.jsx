@@ -32,7 +32,7 @@ const Home = props => {
             "EdifÍcio de cor serena dotado de uma arquitectura contemporânea e integrando extensos jardins. Com Apartamentos de Tipologia T1, T2, T3 e T4, este bloco de apartamentos tem tudo para se tornar a sua nova casa"
           }
           direction="left"
-          bgcolor="#FEFBEA"
+          bgcolor="rgb(107 173 108 / 16%)"
           separatorlink = "/tipologias"
         ></ImageText>
 
@@ -54,7 +54,7 @@ const Home = props => {
             "O nível dos acabamentos acompanha a qualidade de construção através da adoção de soluções construtivas de eficácia comprovada e da seleção de materiais de marcas conceituadas e de qualidade altíssima."
           }
           direction="left"
-          bgcolor="#FEFBEA"
+          bgcolor="rgb(107 173 108 / 16%)"
           separatorlink = "/acabamentos"
         ></ImageText>
       </div>
