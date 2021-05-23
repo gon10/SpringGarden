@@ -28,59 +28,63 @@ import Localizacao from "pages/Localizacao";
 import Acabamentos from "pages/Acabamentos";
 import Contactos from "pages/Contactos";
 
+import { Suspense } from "react";
+
 const useStyles = makeStyles(styles);
 
 function App(props) {
   const { ...rest } = props;
   const classes = useStyles();
   return (
-    <Router>
-      <Header
-        brand="Spring Garden Residences"
-        rightLinks={<HeaderLinks />}
-        fixed
-        color="transparent"
-        changeColorOnScroll={{
-          height: 400,
-          color: "white"
-        }}
-        {...rest}
-      />
-      <Parallax image={require("img/header_banner.jpg").default}>
-        <div className={classes.container}>
-          <GridContainer>
-            <GridItem>
-              <div className={classes.brand}>
-                <h1 className={classes.title}>Welcome to</h1>
-                <h3 className={classes.subtitle}>Spring Garden Residences</h3>
-              </div>
-            </GridItem>
-          </GridContainer>
-        </div>
-      </Parallax>
-      <Switch>
-        <Route exact path="/">
-          <Redirect to="/home" />
-        </Route>
-        <Route path="/home">
-          <Home />
-        </Route>
-        <Route path="/tipologias">
-          <Tipologias />
-        </Route>
-        <Route path="/localizacao">
-          <Localizacao />
-        </Route>
+    <Suspense fallback="loading">
+      <Router>
+        <Header
+          brand="Spring Garden Residences"
+          rightLinks={<HeaderLinks />}
+          fixed
+          color="transparent"
+          changeColorOnScroll={{
+            height: 400,
+            color: "white"
+          }}
+          {...rest}
+        />
+        <Parallax image={require("img/header_banner.jpg").default}>
+          <div className={classes.container}>
+            <GridContainer>
+              <GridItem>
+                <div className={classes.brand}>
+                  <h1 className={classes.title}>Welcome to</h1>
+                  <h3 className={classes.subtitle}>Spring Garden Residences</h3>
+                </div>
+              </GridItem>
+            </GridContainer>
+          </div>
+        </Parallax>
+        <Switch>
+          <Route exact path="/">
+            <Redirect to="/home" />
+          </Route>
+          <Route path="/home">
+            <Home />
+          </Route>
+          <Route path="/tipologias">
+            <Tipologias />
+          </Route>
+          <Route path="/localizacao">
+            <Localizacao />
+          </Route>
 
-        <Route path="/acabamentos">
-          <Acabamentos />
-        </Route>
-        <Route path="/contactos">
-          <Contactos />
-        </Route>
-      </Switch>
-      <Footer />
-    </Router>
+          <Route path="/acabamentos">
+            <Acabamentos />
+          </Route>
+          <Route path="/contactos">
+            <Contactos />
+          </Route>
+        </Switch>
+        <Footer />
+      </Router>
+    </Suspense>
   );
 }
 

@@ -1,5 +1,5 @@
 /*eslint-disable*/
-import React from "react";
+import React, { useState, useEffect } from "react";
 import DeleteIcon from "@material-ui/icons/Delete";
 import IconButton from "@material-ui/core/IconButton";
 // react components for routing our app without refresh
@@ -19,11 +19,23 @@ import CustomDropdown from "components/CustomDropdown/CustomDropdown.js";
 import Button from "components/CustomButtons/Button.js";
 
 import styles from "assets/jss/material-kit-react/components/headerLinksStyle.js";
+import { useTranslation } from "react-i18next";
 
 const useStyles = makeStyles(styles);
 
 export default function HeaderLinks(props) {
+  const { t, i18n } = useTranslation();
   const classes = useStyles();
+  const [btnText, setBtnText] = useState("en");
+
+  const changeLanguage = lng => {
+    i18n.changeLanguage(lng);
+  };
+
+  useEffect(() => {
+    setBtnText(i18n.language);
+    return () => {};
+  }, [i18n.language]);
   return (
     <List className={classes.list}>
       <ListItem className={classes.listItem}>
@@ -56,7 +68,7 @@ export default function HeaderLinks(props) {
             target="_blank"
             className={classes.navLink}
           >
-            Home
+            {t("header.home")}
           </Button>
         </Link>
       </ListItem>
@@ -67,7 +79,7 @@ export default function HeaderLinks(props) {
             target="_blank"
             className={classes.navLink}
           >
-            Tipologias
+            {t("header.apartments")}
           </Button>
         </Link>
       </ListItem>
@@ -78,7 +90,7 @@ export default function HeaderLinks(props) {
             target="_blank"
             className={classes.navLink}
           >
-            Localização
+            {t("header.localization")}
           </Button>
         </Link>
       </ListItem>
@@ -89,7 +101,7 @@ export default function HeaderLinks(props) {
             target="_blank"
             className={classes.navLink}
           >
-            Acabamentos
+            {t("header.details")}
           </Button>
         </Link>
       </ListItem>
@@ -100,9 +112,25 @@ export default function HeaderLinks(props) {
             target="_blank"
             className={classes.navLink}
           >
-            Contactos
+            {t("header.contacts")}
           </Button>
         </Link>
+      </ListItem>
+      <ListItem className={classes.listItem}>
+        <CustomDropdown
+          buttonText={btnText.toUpperCase()}
+          className={"nav-buton"}
+          // dropdownHeader="Dropdown Header"
+          buttonProps={{
+            className: classes.navLink,
+            color: "transparent"
+          }}
+          dropdownList={["EN", { divider: true }, "PT"]}
+          onClick={ele => {
+            changeLanguage(ele.toLowerCase());
+            return ele;
+          }}
+        />
       </ListItem>
       <ListItem className={classes.listItem}>
         {/*<Tooltip title="Delete">
