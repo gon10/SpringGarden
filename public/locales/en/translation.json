@@ -7,7 +7,10 @@
     "apartments": "Apartments"
   },
   "home": {
-    "home_carousel_title": "Spring Garden Residences está rasing!",
+    "home_carousel_title": "Spring Garden Residences is rasing!",
     "home_carousel_description": "A project with unique characteristics designed for families that value exclusivity, comfort and tranquility in a privileged location. Find it out!"
+  },
+  "imagetext":{
+    "title_tylogolies": "SOLUTIONS SUITABLE TO YOUR LIFESTYLE!"
   }
 }

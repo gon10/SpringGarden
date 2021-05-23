@@ -122,7 +122,7 @@ export default function HeaderLinks(props) {
           className={"nav-buton"}
           // dropdownHeader="Dropdown Header"
           buttonProps={{
-            className: classes.navLink,
+            className: classes.navLink + "nav-buton",
             color: "transparent"
           }}
           dropdownList={["EN", { divider: true }, "PT"]}

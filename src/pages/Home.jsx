@@ -12,10 +12,12 @@ import GridItem from "components/Grid/GridItem";
 import { makeStyles } from "@material-ui/core/styles";
 import styles from "assets/jss/material-kit-react/views/components.js";
 import SectionCarousel from "components/Carousel/SectionCarousel";
+import { useTranslation } from "react-i18next";
 
 const useStyles = makeStyles(styles);
 
 const Home = props => {
+  const { t, i18n } = useTranslation();
   const { ...rest } = props;
   const classes = useStyles();
   return (
@@ -25,7 +27,7 @@ const Home = props => {
         <SectionCarousel />
         <ImageText
           image={image}
-          title={"SOLUÇÕES ADEQUADAS AO SEU ESTILO DE VIDA!"}
+          title={t("imagetext.title_tylogolies")}
           summary={
             "EdifÍcio de cor serena dotado de uma arquitectura contemporânea e integrando extensos jardins. Com Apartamentos de Tipologia T1, T2, T3 e T4, este bloco de apartamentos tem tudo para se tornar a sua nova casa"
           }

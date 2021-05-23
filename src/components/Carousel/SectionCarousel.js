@@ -10,9 +10,9 @@ import GridContainer from "components/Grid/GridContainer.js";
 import GridItem from "components/Grid/GridItem.js";
 import Card from "components/Card/Card.js";
 
-import image1 from "img/in1.jpg";
-import image2 from "img/in2.jpg";
-import image3 from "assets/img/bg3.jpg";
+import image1 from "img/exterior.PNG";
+import image2 from "img/cozinha.PNG";
+import image3 from "img/sala.PNG";
 
 import styles from "assets/jss/material-kit-react/views/componentsSections/carouselStyle.js";
 
@@ -33,11 +33,10 @@ export default function SectionCarousel() {
       <div className={classes.container}>
         <GridContainer>
           <GridItem xs={12} sm={12} md={8} className={classes.marginAuto}>
-            <div className="d-flex flex-column justify-content-around align-items-center text-center">
-              <h1>O Spring Garden Residences está a nascer!</h1>
-              <h5>
-                Um projecto com características únicas concebido para famílias que valorizam a exclusividade, o
-                conforto e a tranquilidade numa localização privilegiada.
+            <div className="p-1 d-flex flex-column justify-content-around justify-content-center align-items-center">
+              <h1 className="springardenlogo">EM PERFEITA HARMONIA COM A NATUREZA...</h1>
+              <h5 className="springardenIntro">
+                O Sping Garden Residences está a nascer na Boavista. Um projecto com características únicas concebido para famílias que valorizam a exclusividade, o conforto e a tranquilidade numa localização privilegiada.
                 <br />
                 Descubra!
               </h5>
@@ -50,10 +49,10 @@ export default function SectionCarousel() {
                       className="slick-image"
                     />
                     <div className="slick-caption">
-                      <h4>
+                      {/*<h4>
                         <LocationOn className="slick-icons" />
                         Yellowstone National Park, United States
-                      </h4>
+                      </h4>*/}
                     </div>
                   </div>
                   <div>
@@ -63,10 +62,10 @@ export default function SectionCarousel() {
                       className="slick-image"
                     />
                     <div className="slick-caption">
-                      <h4>
+                      {/*<h4>
                         <LocationOn className="slick-icons" />
                         Somewhere Beyond, United States
-                      </h4>
+                      </h4>*/}
                     </div>
                   </div>
                   <div>
@@ -76,14 +75,18 @@ export default function SectionCarousel() {
                       className="slick-image"
                     />
                     <div className="slick-caption">
-                      <h4>
+                      {/*<h4>
                         <LocationOn className="slick-icons" />
                         Yellowstone National Park, United States
-                      </h4>
+                      </h4>*/}
                     </div>
                   </div>
                 </Carousel>
               </Card>
+              <h6 className="descubramais">
+                  Deslize e descubra!
+              </h6>
+
             </div>
           </GridItem>
         </GridContainer>

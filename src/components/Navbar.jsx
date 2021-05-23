@@ -87,7 +87,7 @@ const Navbar = () => {
                 onClick={() => {
                   this.scrolling(this.contact);
                 }}
-                className="btn-style nav-item nav-link"
+                className="btn-style nav-item nav-link nav-buton"
               >
                 Contactos
               </a>
