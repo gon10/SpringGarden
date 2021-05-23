@@ -31,6 +31,7 @@ const Home = props => {
           }
           direction="left"
           bgcolor="#FEFBEA"
+          separatorlink = "/tipologias"
         ></ImageText>
 
         <ImageText
@@ -41,6 +42,7 @@ const Home = props => {
           }
           direction="right"
           bgcolor="white"
+          separatorlink = "/localizacao"
         ></ImageText>
 
         <ImageText
@@ -51,6 +53,7 @@ const Home = props => {
           }
           direction="left"
           bgcolor="#FEFBEA"
+          separatorlink = "/acabamentos"
         ></ImageText>
       </div>
     </>

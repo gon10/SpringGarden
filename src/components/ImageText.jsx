@@ -1,8 +1,10 @@
 import React from "react";
 import Button from "components/CustomButtons/Button.js";
+import { Link } from "react-router-dom";
+
 
 const ImageText = props => {
-  const { image, direction, title, summary, bgcolor } = props;
+  const { image, direction, title, summary, bgcolor, separatorlink } = props;
 
   const getDisplayOrder = () => {
     switch (direction) {
@@ -12,7 +14,9 @@ const ImageText = props => {
             <div class="p-3 col-12 col-md-6 d-flex flex-column justify-content-center align-items-center">
               <h4>{title}</h4>
               <p>{summary}</p>
-              <button>Descubra mais!</button>
+              <Link className={"nav-buton"} to={separatorlink}>
+                  <button>Descubra mais!</button>
+              </Link>
             </div>
             <div class="col-12 col-md-6 ">
               <img src={image} alt="image" className="w-100"></img>
@@ -29,7 +33,9 @@ const ImageText = props => {
             <div class="p-3 col-12 col-md-6 d-flex flex-column justify-content-center align-items-center">
               <h4>{title}</h4>
               <p class="mariana">{summary}</p>
-              <button>Descubra mais!</button>
+              <Link className={"nav-buton"} to={separatorlink}>
+                  <button>Descubra mais!</button>
+              </Link>
             </div>
           </>
         );
@@ -40,7 +46,9 @@ const ImageText = props => {
             <div class="p-3 col-12 col-md-12 d-flex flex-column justify-content-center align-items-center">
               <h4>{title}</h4>
               <p>{summary}</p>
-              <button>Descubra mais!</button>
+              <Link className={"nav-buton"} to={separatorlink}>
+                  <button>Descubra mais!</button>
+              </Link>
               <img src={image} alt="image" className="w-100"></img>
             </div>
           </>
