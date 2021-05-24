@@ -3,6 +3,7 @@ import styles from "assets/jss/material-kit-react/views/components.js";
 import { makeStyles } from "@material-ui/core/styles";
 import classNames from "classnames";
 import SectionCarousel from "components/Carousel/SectionCarousel";
+;
 const useStyles = makeStyles(styles);
 
 const Tipologias = props => {

@@ -645,7 +645,25 @@ p {
   color: #c7ab62;
   font-size: 20px;
   font-weight: bold;
+  text-align: center;
 }
+
+.descubramais:after {
+  content: ' ';
+  display: block;
+  width: 100px;
+  height: 1px;
+  background-color: #c7ab62;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 20px;
+  transition: all 0.3s ease-in-out;
+}
+
+.descubramais:hover:after {
+  width: 200px;
+}
+
 /*********************************************************************************/
 .nav-buton {
   color: #c7ab62 !important;

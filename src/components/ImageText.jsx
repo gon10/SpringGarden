@@ -54,6 +54,41 @@ const ImageText = props => {
           </>
         );
         break;
+        case "noButtonLeft":
+          return (
+            <>
+              <div class="col-12 col-md-6 ">
+                <img src={image} alt="image" className="w-100"></img>
+              </div>
+              <div class="p-3 col-12 col-md-6 d-flex flex-column justify-content-center align-items-center">
+                <h4>{title}</h4>
+                <p class="mariana">{summary}</p>
+              </div>
+            </>
+          );
+          break;
+          case "noButtonRight":
+            return (
+              <>
+                <div class="p-3 col-12 col-md-6 d-flex flex-column justify-content-center align-items-center">
+                  <h4>{title}</h4>
+                  <p>{summary}</p>
+                </div>
+                <div class="col-12 col-md-6 ">
+                  <img src={image} alt="image" className="w-100"></img>
+                </div>
+              </>
+            );
+            break;
+        case "imagelong":
+        return (
+          <>
+            <div>
+              <img src={image} alt="image" className="w-100"></img>
+            </div>
+          </>
+        );
+        break;
 
       default:
         return (
