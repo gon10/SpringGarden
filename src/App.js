@@ -1,3 +1,4 @@
+import { createRef } from "react";
 import GridContainer from "components/Grid/GridContainer";
 import GridItem from "components/Grid/GridItem";
 import HeaderLinks from "components/Header/HeaderLinks";
@@ -35,12 +36,34 @@ const useStyles = makeStyles(styles);
 function App(props) {
   const { ...rest } = props;
   const classes = useStyles();
+
+  const homeRef = createRef();
+  const tipologiasRef = createRef();
+  const localizacaoRef = createRef();
+  const acabamentosRef = createRef();
+  const contactosRef = createRef();
+
+  const scrolling = instance => {
+    let node = document.getElementById(instance.current.props.id);
+    window.scrollTo({
+      top: node.offsetTop,
+      behavior: "smooth"
+    });
+  };
   return (
     <Suspense fallback="loading">
       <Router>
         <Header
           brand="Spring Garden Residences"
-          rightLinks={<HeaderLinks />}
+          rightLinks={
+            <HeaderLinks
+              homeRef={homeRef}
+              tipologiasRef={tipologiasRef}
+              localizacaoRef={localizacaoRef}
+              acabamentosRef={acabamentosRef}
+              contactosRef={contactosRef}
+            />
+          }
           fixed
           color="transparent"
           changeColorOnScroll={{
@@ -61,27 +84,44 @@ function App(props) {
             </GridContainer>
           </div>
         </Parallax>
-        <Switch>
+        <Home ref={homeRef} />
+        <Tipologias ref={tipologiasRef} />
+        <Parallax image={require("img/header_banner.jpg").default}>
+          <div className={classes.container}>
+            <GridContainer>
+              <GridItem>
+                <div className={classes.brand}>
+                  <h1 className={classes.title}>Welcome to</h1>
+                  <h3 className={classes.subtitle}>Spring Garden Residences</h3>
+                </div>
+              </GridItem>
+            </GridContainer>
+          </div>
+        </Parallax>
+        <Localizacao ref={localizacaoRef} />
+        <Acabamentos ref={acabamentosRef} />
+        <Contactos ref={contactosRef} />
+        {/* <Switch>
           <Route exact path="/">
             <Redirect to="/home" />
           </Route>
           <Route path="/home">
             <Home />
           </Route>
-          <Route path="/tipologias">
+          <Route path="/#tipologias">
             <Tipologias />
           </Route>
-          <Route path="/localizacao">
+          <Route path="/#localizacao">
             <Localizacao />
           </Route>
 
-          <Route path="/acabamentos">
+          <Route path="/#acabamentos">
             <Acabamentos />
           </Route>
-          <Route path="/contactos">
+          <Route path="/#contactos">
             <Contactos />
           </Route>
-        </Switch>
+        </Switch> */}
         <Footer />
       </Router>
     </Suspense>

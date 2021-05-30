@@ -32,10 +32,27 @@ export default function HeaderLinks(props) {
     i18n.changeLanguage(lng);
   };
 
+  const {
+    homeRef,
+    tipologiasRef,
+    localizacaoRef,
+    acabamentosRef,
+    contactosRef
+  } = props;
+
   useEffect(() => {
     setBtnText(i18n.language);
     return () => {};
   }, [i18n.language]);
+
+  const scrolling = instance => {
+    console.log("instance.current.attributes", instance);
+    let node = document.getElementById(instance.current.id);
+    window.scrollTo({
+      top: node.offsetTop,
+      behavior: "smooth"
+    });
+  };
   return (
     <List className={classes.list}>
       <ListItem className={classes.listItem}>
@@ -62,55 +79,70 @@ export default function HeaderLinks(props) {
         /> */}
       </ListItem>
       <ListItem className={classes.listItem}>
-        <Link className={"nav-buton"} to="/home">
+        <Link className={"nav-buton"} to="/#home">
           <Button
             color="transparent"
             target="_blank"
             className={classes.navLink}
+            onClick={() => {
+              scrolling(homeRef);
+            }}
           >
             {t("header.home")}
           </Button>
         </Link>
       </ListItem>
       <ListItem className={classes.listItem}>
-        <Link className={"nav-buton"} to="/tipologias">
+        <Link className={"nav-buton"} to="/#tipologias">
           <Button
             color="transparent"
             target="_blank"
             className={classes.navLink}
+            onClick={() => {
+              scrolling(tipologiasRef);
+            }}
           >
             {t("header.apartments")}
           </Button>
         </Link>
       </ListItem>
       <ListItem className={classes.listItem}>
-        <Link className={"nav-buton"} to="/localizacao">
+        <Link className={"nav-buton"} to="/#localizacao">
           <Button
             color="transparent"
             target="_blank"
             className={classes.navLink}
+            onClick={() => {
+              scrolling(localizacaoRef);
+            }}
           >
             {t("header.localization")}
           </Button>
         </Link>
       </ListItem>
       <ListItem className={classes.listItem}>
-        <Link className={"nav-buton"} to="/acabamentos">
+        <Link className={"nav-buton"} to="/#acabamentos">
           <Button
             color="transparent"
             target="_blank"
             className={classes.navLink}
+            onClick={() => {
+              scrolling(acabamentosRef);
+            }}
           >
             {t("header.details")}
           </Button>
         </Link>
       </ListItem>
       <ListItem className={classes.listItem}>
-        <Link className={"nav-buton"} to="/contactos">
+        <Link className={"nav-buton"} to="/#contactos">
           <Button
             color="transparent"
             target="_blank"
             className={classes.navLink}
+            onClick={() => {
+              scrolling(contactosRef);
+            }}
           >
             {t("header.contacts")}
           </Button>

@@ -16,14 +16,18 @@ import { useTranslation } from "react-i18next";
 
 const useStyles = makeStyles(styles);
 
-const Home = props => {
+const Home = React.forwardRef((props, ref) => {
   const { t, i18n } = useTranslation();
   const { ...rest } = props;
   const classes = useStyles();
   return (
     <>
       {/* <Navbar /> */}
-      <div className={classNames(classes.main, classes.mainRaised)}>
+      <div
+        ref={ref}
+        id="home-container"
+        className={classNames(classes.main, classes.mainRaised)}
+      >
         <SectionCarousel />
         <ImageText
           image={image}
@@ -33,7 +37,7 @@ const Home = props => {
           }
           direction="left"
           bgcolor="rgb(107 173 108 / 16%)"
-          separatorlink = "/tipologias"
+          separatorlink="/tipologias"
         ></ImageText>
 
         <ImageText
@@ -44,7 +48,7 @@ const Home = props => {
           }
           direction="right"
           bgcolor="white"
-          separatorlink = "/localizacao"
+          separatorlink="/localizacao"
         ></ImageText>
 
         <ImageText
@@ -55,11 +59,11 @@ const Home = props => {
           }
           direction="left"
           bgcolor="rgb(107 173 108 / 16%)"
-          separatorlink = "/acabamentos"
+          separatorlink="/acabamentos"
         ></ImageText>
       </div>
     </>
   );
-};
+});
 
 export default Home;

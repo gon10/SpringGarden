@@ -3,13 +3,16 @@ import styles from "assets/jss/material-kit-react/views/components.js";
 import { makeStyles } from "@material-ui/core/styles";
 import classNames from "classnames";
 import SectionCarousel from "components/Carousel/SectionCarousel";
-;
 const useStyles = makeStyles(styles);
 
-const Tipologias = props => {
+const Tipologias = React.forwardRef((props, ref) => {
   const classes = useStyles();
   return (
-    <div className={classNames(classes.main, classes.mainRaised)}>
+    <div
+      ref={ref}
+      id="tipologias-container"
+      className={classNames(classes.main, classes.mainRaised)}
+    >
       <SectionCarousel />
       Tipologias
       <br />
@@ -32,6 +35,6 @@ const Tipologias = props => {
       publishing software like Aldus PageMaker including versions of Lorem Ipsum
     </div>
   );
-};
+});
 
 export default Tipologias;

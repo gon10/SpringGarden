@@ -5,10 +5,14 @@ import classNames from "classnames";
 import SectionCarousel from "components/Carousel/SectionCarousel";
 const useStyles = makeStyles(styles);
 
-const Contactos = props => {
+const Contactos = React.forwardRef((props, ref) => {
   const classes = useStyles();
   return (
-    <div className={classNames(classes.main, classes.mainRaised)}>
+    <div
+      ref={ref}
+      id="contactos-container"
+      className={classNames(classes.main, classes.mainRaised)}
+    >
       <SectionCarousel />
       Contactos
       <br />
@@ -31,6 +35,6 @@ const Contactos = props => {
       publishing software like Aldus PageMaker including versions of Lorem Ipsum
     </div>
   );
-};
+});
 
 export default Contactos;
