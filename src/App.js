@@ -78,7 +78,9 @@ function App(props) {
               <GridItem>
                 <div className={classes.brand}>
                   <h1 className={classes.title}>Welcome to</h1>
-                  <h3 className={classes.subtitle}>Spring Garden Residences</h3>
+                  <h3 className={classes.subtitle}>
+                    Spring Garden Residences!
+                  </h3>
                 </div>
               </GridItem>
             </GridContainer>
