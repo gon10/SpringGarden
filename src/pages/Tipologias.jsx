@@ -11,7 +11,7 @@ const Tipologias = React.forwardRef((props, ref) => {
     <div
       ref={ref}
       id="tipologias-container"
-      className={classNames(classes.main, classes.mainRaised)}
+      className={classNames(classes.main, classes.mainRaised)} 
     >
       <SectionCarousel />
       Tipologias

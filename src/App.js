@@ -10,7 +10,7 @@ import Header from "./components/Header/Header";
 import ImageText from "./components/ImageText";
 import Navbar from "./components/Navbar";
 import Test from "./components/Test";
-import image from "./img/inside.jpg";
+import image from "./img/porto.jpg";
 import image2 from "./img/boavista.jpg";
 
 import styles from "assets/jss/material-kit-react/views/components.js";
@@ -87,21 +87,65 @@ function App(props) {
           </div>
         </Parallax>
         <Home ref={homeRef} />
-        <Tipologias ref={tipologiasRef} />
         <Parallax image={require("img/header_banner.jpg").default}>
           <div className={classes.container}>
             <GridContainer>
               <GridItem>
                 <div className={classes.brand}>
-                  <h1 className={classes.title}>Welcome to</h1>
-                  <h3 className={classes.subtitle}>Spring Garden Residences</h3>
+                  <h1 className={classes.title}>Tipologias</h1>
+                  <h3 className={classes.subtitle}>
+                    Spring Garden Residences!
+                  </h3>
+                </div>
+              </GridItem>
+            </GridContainer>
+          </div>
+        </Parallax>
+        <Tipologias ref={tipologiasRef} />
+        <Parallax image={require("img/porto.jpg").default}>
+          <div className={classes.container}>
+            <GridContainer>
+            <GridItem>
+                <div className={classes.brand}>
+                  <h1 className={classes.title}>Localização</h1>
+                  <h3 className={classes.subtitle}>
+                    Teste!
+                  </h3>
                 </div>
               </GridItem>
             </GridContainer>
           </div>
         </Parallax>
         <Localizacao ref={localizacaoRef} />
+        <Parallax image={require("img/porto.jpg").default}>
+          <div className={classes.container}>
+            <GridContainer>
+            <GridItem>
+                <div className={classes.brand}>
+                  <h1 className={classes.title}>Acabamentos</h1>
+                  <h3 className={classes.subtitle}>
+                    Teste!
+                  </h3>
+                </div>
+              </GridItem>
+            </GridContainer>
+          </div>
+        </Parallax>
         <Acabamentos ref={acabamentosRef} />
+        <Parallax image={require("img/porto.jpg").default}>
+          <div className={classes.container}>
+            <GridContainer>
+            <GridItem>
+                <div className={classes.brand}>
+                  <h1 className={classes.title}>Contactos</h1>
+                  <h3 className={classes.subtitle}>
+                    Teste!
+                  </h3>
+                </div>
+              </GridItem>
+            </GridContainer>
+          </div>
+        </Parallax>
         <Contactos ref={contactosRef} />
         {/* <Switch>
           <Route exact path="/">
