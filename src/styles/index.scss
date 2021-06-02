@@ -593,11 +593,13 @@
   height: 100vh;
 }
 
-.background h1 {
-  color: #c7ab62;
+h1 {
+  color: #fff;
+  font-family: 'Noto Sans SC', sans-serif;
 }
-.background h3 {
-  color: #c7ab62;
+.h3 {
+  color: #fff;
+  font-family: 'Noto Sans SC', sans-serif;
 }
 /*****Botao descubra mais!**************************************************************************/
 button {
@@ -664,18 +666,34 @@ p {
   width: 200px;
 }
 
-/*********************************************************************************/
-
-.mainMarginPadding {
-  margin: -60px 30px -40px;
-  padding-bottom: 10px;
-}
+/***************Containers marging and padding*************************************/
 
 #tipologias-container {
   margin: -60px 30px -40px;
   padding-bottom: 10px;
 }
 
+#home-container {
+  margin: -60px 30px -40px;
+  padding-bottom: 10px;
+}
+
+#localizacao-container {
+  margin: -60px 30px -40px;
+  padding-bottom: 10px;
+  padding-top: 30px;
+}
+
+#acabamentos-container {
+  margin: -60px 30px -40px;
+  padding-bottom: 10px;
+}
+
+#contactos-container {
+  margin: -60px 30px -40px;
+}
+
+/*********************************************************************************/
 .nav-buton {
   color: #c7ab62 !important;
   text-decoration: none;

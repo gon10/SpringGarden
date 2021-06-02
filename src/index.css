@@ -5,6 +5,10 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-image: url(/src/img/testepila.png);
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: center center;
 }
 
 code {

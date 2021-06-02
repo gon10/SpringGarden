@@ -195,6 +195,8 @@ export default function Footer(props) {
         <div className={classes.container}>
           <div className="row">
             <a className="home-style navbar-brand">
+            <br />
+          
               <img
                 onClick={() => {
                   window.scrollTo({

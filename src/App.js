@@ -87,60 +87,49 @@ function App(props) {
           </div>
         </Parallax>
         <Home ref={homeRef} />
-        <Parallax image={require("img/header_banner.jpg").default}>
+        <Parallax image={require("img/tipologiasParalax.jpg").default}>
           <div className={classes.container}>
             <GridContainer>
               <GridItem>
                 <div className={classes.brand}>
-                  <h1 className={classes.title}>Tipologias</h1>
-                  <h3 className={classes.subtitle}>
-                    Spring Garden Residences!
-                  </h3>
+                  <h1 className={classes.title}>Encontre o seu conforto e harmonia</h1>
                 </div>
               </GridItem>
             </GridContainer>
           </div>
         </Parallax>
         <Tipologias ref={tipologiasRef} />
-        <Parallax image={require("img/porto.jpg").default}>
+        <Parallax image={require("img/portoParalax.jpg").default}>
           <div className={classes.container}>
             <GridContainer>
             <GridItem>
                 <div className={classes.brand}>
-                  <h1 className={classes.title}>Localização</h1>
-                  <h3 className={classes.subtitle}>
-                    Teste!
-                  </h3>
+                  <h1 className={classes.title}>Porto, uma localizaçao privilegiada</h1>
                 </div>
               </GridItem>
             </GridContainer>
           </div>
         </Parallax>
         <Localizacao ref={localizacaoRef} />
-        <Parallax image={require("img/porto.jpg").default}>
+        <Parallax image={require("img/acabamentosParalax.jpg").default}>
           <div className={classes.container}>
             <GridContainer>
             <GridItem>
                 <div className={classes.brand}>
-                  <h1 className={classes.title}>Acabamentos</h1>
-                  <h3 className={classes.subtitle}>
-                    Teste!
-                  </h3>
+                  <h1 className={classes.title}>Design e acabamentos de luxo</h1>
+
                 </div>
               </GridItem>
             </GridContainer>
           </div>
         </Parallax>
         <Acabamentos ref={acabamentosRef} />
-        <Parallax image={require("img/porto.jpg").default}>
+        <Parallax image={require("img/contatosParalax.jpeg").default}>
           <div className={classes.container}>
             <GridContainer>
             <GridItem>
                 <div className={classes.brand}>
-                  <h1 className={classes.title}>Contactos</h1>
-                  <h3 className={classes.subtitle}>
-                    Teste!
-                  </h3>
+                  <h1 className={classes.title}>Descubra mais, contacte-nos</h1>
                 </div>
               </GridItem>
             </GridContainer>
@@ -168,6 +157,7 @@ function App(props) {
             <Contactos />
           </Route>
         </Switch> */}
+        
         <Footer />
       </Router>
     </Suspense>

@@ -21,10 +21,7 @@ const Localizacao = React.forwardRef((props, ref) => {
         direction="imagelong"
         bgcolor="rgb(255 255 255 / 16%)"
       ></ImageText> */}
-      <br />
-      <br />
-      <br />
-      <br />
+
       <h6 className="descubramais">
         UMA OPORTUNIDADe ÚNICA PARA MORAR OU INVESTIR NO PORTO!
       </h6>
