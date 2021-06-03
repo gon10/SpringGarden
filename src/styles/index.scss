@@ -593,10 +593,17 @@
   height: 100vh;
 }
 
-h1 {
+.textParalax {
   color: #fff;
-  font-family: 'Noto Sans SC', sans-serif;
+  font-size: 40px;
+  //font-family: 'Quicksand', sans-serif;
+  font-weight: bold;
+  text-align: justify;
+  margin-bottom: 5px;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
 }
+
 .h3 {
   color: #fff;
   font-family: 'Noto Sans SC', sans-serif;
@@ -694,6 +701,19 @@ p {
 }
 
 /*********************************************************************************/
+
+.tipologiasText {
+  text-align: center;
+}
+.typologies {
+  position: relative;
+  width: 100%;
+  min-height: 1px;
+  margin-right: 100px;
+  margin-left: 100px;
+  margin-top: 30px;
+}
+
 .nav-buton {
   color: #c7ab62 !important;
   text-decoration: none;

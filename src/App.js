@@ -72,14 +72,15 @@ function App(props) {
           }}
           {...rest}
         />
-        <Parallax image={require("img/header_banner.jpg").default}>
+        <Parallax image={require("img/exemploImgParalax.jpg").default}>
           <div className={classes.container}>
             <GridContainer>
               <GridItem>
                 <div className={classes.brand}>
-                  <h1 className={classes.title}>Welcome to</h1>
+                  <h1 className={classes.title, "textParalax"}>Em perfeita</h1>
+                  <h1 className={classes.title, "textParalax"}>harmonia com a Natureza</h1>
                   <h3 className={classes.subtitle}>
-                    Spring Garden Residences!
+                    Spring Garden Residences
                   </h3>
                 </div>
               </GridItem>
@@ -92,7 +93,8 @@ function App(props) {
             <GridContainer>
               <GridItem>
                 <div className={classes.brand}>
-                  <h1 className={classes.title}>Encontre o seu conforto e harmonia</h1>
+                  <h1 className={classes.title, "textParalax"}>Encontre</h1>
+                  <h1 className={classes.title, "textParalax"}>o seu conforto e harmonia</h1>
                 </div>
               </GridItem>
             </GridContainer>
@@ -104,7 +106,8 @@ function App(props) {
             <GridContainer>
             <GridItem>
                 <div className={classes.brand}>
-                  <h1 className={classes.title}>Porto, uma localizaçao privilegiada</h1>
+                  <h1 className={classes.title, "textParalax"}>Porto,</h1>
+                  <h1 className={classes.title, "textParalax"}>uma localizaçao privilegiada</h1>
                 </div>
               </GridItem>
             </GridContainer>
@@ -116,7 +119,8 @@ function App(props) {
             <GridContainer>
             <GridItem>
                 <div className={classes.brand}>
-                  <h1 className={classes.title}>Design e acabamentos de luxo</h1>
+                  <h1 className={classes.title, "textParalax"}>Design</h1>
+                  <h1 className={classes.title, "textParalax"}>e acabamentos de luxo</h1>
 
                 </div>
               </GridItem>
@@ -129,7 +133,8 @@ function App(props) {
             <GridContainer>
             <GridItem>
                 <div className={classes.brand}>
-                  <h1 className={classes.title}>Descubra mais, contacte-nos</h1>
+                  <h1 className={classes.title, "textParalax"}>Descubra</h1>
+                  <h1 className={classes.title, "textParalax"}>a casa dos seus sonhos</h1>
                 </div>
               </GridItem>
             </GridContainer>
@@ -157,7 +162,7 @@ function App(props) {
             <Contactos />
           </Route>
         </Switch> */}
-        
+
         <Footer />
       </Router>
     </Suspense>

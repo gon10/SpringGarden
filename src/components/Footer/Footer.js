@@ -213,7 +213,7 @@ export default function Footer(props) {
           <div className="row">
             {/* <SectionPills /> */}
             <div className="info col-12 col-md-4 d-flex flex-column justify-content-center align-items-center">
-              <h3>Localizaçao</h3>
+              <h3>Localização</h3>
               <p>R. Dom Afonso Henriques 827 Pedrouços, Maia</p>
             </div>
             <div className="info col-12 col-md-4 d-flex flex-column justify-content-center align-items-center">
@@ -222,7 +222,7 @@ export default function Footer(props) {
             </div>
             <div className="info col-12 col-md-4 d-flex flex-column justify-content-center align-items-center">
               <h3>Contactos</h3>
-              <p>+351919429518 +351 913050087</p>
+              <p>+351 919429518 +351 913050087</p>
             </div>
           </div>
 

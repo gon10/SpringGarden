@@ -3,8 +3,8 @@ import React from "react";
 import ImageText from "../components/ImageText";
 import Navbar from "../components/Navbar";
 import Test from "../components/Test";
-import image from "../img/teste.jpg";
-import image2 from "../img/boavista.jpg";
+import image from "../img/sala-1.jpg";
+import image2 from "../img/boavista.PNG";
 import Parallax from "components/Parallax/Parallax";
 import classNames from "classnames";
 import GridContainer from "components/Grid/GridContainer";
@@ -31,12 +31,12 @@ const Home = React.forwardRef((props, ref) => {
         <SectionCarousel />
         <ImageText
           image={image}
-          title={t("imagetext.title_tylogolies")}
+          title={t("imagetext.title_typologies")}
           summary={
             "EdifÍcio de cor serena dotado de uma arquitectura contemporânea e integrando extensos jardins. Com Apartamentos de Tipologia T1, T2, T3 e T4, este bloco de apartamentos tem tudo para se tornar a sua nova casa"
           }
           direction="left"
-          bgcolor="rgb(107 173 108 / 16%)"
+          bgcolor="#fff"
           separatorlink="/tipologias"
         ></ImageText>
 
@@ -44,7 +44,7 @@ const Home = React.forwardRef((props, ref) => {
           image={image2}
           title={"ADIRA AO ESTILO DE VIDA DA BOAVISTA!"}
           summary={
-            "O empreendimento Spring Garden Residences está a nascer na Boavista. Localizado numa importante artéria do Porto, bastante próximo da baiixa da cidade e das magníficas praias."
+            "O empreendimento Spring Garden Residences está a nascer na Boavista. Localizado numa importante artéria do Porto, bastante próximo da baixa da cidade e das magníficas praias."
           }
           direction="right"
           bgcolor="white"
@@ -58,7 +58,7 @@ const Home = React.forwardRef((props, ref) => {
             "O nível dos acabamentos acompanha a qualidade de construção através da adoção de soluções construtivas de eficácia comprovada e da seleção de materiais de marcas conceituadas e de qualidade altíssima."
           }
           direction="left"
-          bgcolor="rgb(107 173 108 / 16%)"
+          bgcolor="white"
           separatorlink="/acabamentos"
         ></ImageText>
       </div>

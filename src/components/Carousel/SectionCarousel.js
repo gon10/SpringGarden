@@ -34,7 +34,7 @@ export default function SectionCarousel() {
         <GridContainer>
           <GridItem xs={12} sm={12} md={8} className={classes.marginAuto}>
             <div className="p-1 d-flex flex-column justify-content-around justify-content-center align-items-center">
-              <h1 className="springardenlogo">EM PERFEITA HARMONIA COM A NATUREZA...</h1>
+              {/* <h1 className="springardenlogo">EM PERFEITA HARMONIA COM A NATUREZA...</h1> */}
               <h5 className="springardenIntro">
                 O Sping Garden Residences está a nascer na Boavista. Um projecto com características únicas concebido para famílias que valorizam a exclusividade, o conforto e a tranquilidade numa localização privilegiada.
                 <br />

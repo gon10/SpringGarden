@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 
 
 const ImageText = props => {
-  const { image, direction, title, summary, bgcolor, separatorlink } = props;
+  const { image, image2, image3, direction, title, summary, bgcolor, separatorlink } = props;
 
   const getDisplayOrder = () => {
     switch (direction) {
@@ -57,7 +57,7 @@ const ImageText = props => {
         case "noButtonLeft":
           return (
             <>
-              <div class="col-12 col-md-6 ">
+              <div class="col-12 col-md-6">
                 <img src={image} alt="image" className="w-100"></img>
               </div>
               <div class="p-3 col-12 col-md-6 d-flex flex-column justify-content-center align-items-center">
@@ -88,7 +88,7 @@ const ImageText = props => {
             </div>
           </>
         );
-        break;
+        break;   
 
       default:
         return (
