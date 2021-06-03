@@ -12,7 +12,7 @@ import Background from "components/Background";
 
 const useStyles = makeStyles(styles);
 
-export default function Parallax(props) {
+const Parallax = React.forwardRef((props, ref) => {
   let windowScrollTop;
   if (window.innerWidth >= 768) {
     windowScrollTop = window.pageYOffset / 3;
@@ -53,8 +53,9 @@ export default function Parallax(props) {
           ...style,
           backgroundImage: "url(" + image + ")",
           transform: transform,
-          backgroundAttachment: "fixed",
+          backgroundAttachment: "fixed"
         }}
+        ref={ref}
       >
         <div id="stars" />
         <div id="stars2" />
@@ -69,7 +70,9 @@ export default function Parallax(props) {
       />*/}
     </>
   );
-}
+});
+
+export default Parallax;
 
 Parallax.propTypes = {
   className: PropTypes.string,

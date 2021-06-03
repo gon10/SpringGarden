@@ -43,13 +43,6 @@ function App(props) {
   const acabamentosRef = createRef();
   const contactosRef = createRef();
 
-  const scrolling = instance => {
-    let node = document.getElementById(instance.current.props.id);
-    window.scrollTo({
-      top: node.offsetTop,
-      behavior: "smooth"
-    });
-  };
   return (
     <Suspense fallback="loading">
       <Router>
@@ -72,75 +65,99 @@ function App(props) {
           }}
           {...rest}
         />
-        <Parallax image={require("img/exemploImgParalax.jpg").default}>
+        <Parallax
+          image={require("img/exemploImgParalax.jpg").default}
+          ref={homeRef}
+        >
           <div className={classes.container}>
             <GridContainer>
               <GridItem>
                 <div className={classes.brand}>
-                  <h1 className={classes.title, "textParalax"}>Em perfeita</h1>
-                  <h1 className={classes.title, "textParalax"}>harmonia com a Natureza</h1>
-                  <h3 className={classes.subtitle}>
-                    Spring Garden Residences
-                  </h3>
+                  <h1 className={(classes.title, "textParalax")}>
+                    Em perfeita
+                  </h1>
+                  <h1 className={(classes.title, "textParalax")}>
+                    harmonia com a Natureza
+                  </h1>
+                  <h3 className={classes.subtitle}>Spring Garden Residences</h3>
                 </div>
               </GridItem>
             </GridContainer>
           </div>
         </Parallax>
-        <Home ref={homeRef} />
-        <Parallax image={require("img/tipologiasParalax.jpg").default}>
+        <Home />
+        <Parallax
+          image={require("img/tipologiasParalax.jpg").default}
+          ref={tipologiasRef}
+        >
           <div className={classes.container}>
             <GridContainer>
               <GridItem>
                 <div className={classes.brand}>
-                  <h1 className={classes.title, "textParalax"}>Encontre</h1>
-                  <h1 className={classes.title, "textParalax"}>o seu conforto e harmonia</h1>
+                  <h1 className={(classes.title, "textParalax")}>Encontre</h1>
+                  <h1 className={(classes.title, "textParalax")}>
+                    o seu conforto e harmonia
+                  </h1>
                 </div>
               </GridItem>
             </GridContainer>
           </div>
         </Parallax>
-        <Tipologias ref={tipologiasRef} />
-        <Parallax image={require("img/portoParalax.jpg").default}>
+        <Tipologias />
+        <Parallax
+          image={require("img/portoParalax.jpg").default}
+          ref={localizacaoRef}
+        >
           <div className={classes.container}>
             <GridContainer>
-            <GridItem>
+              <GridItem>
                 <div className={classes.brand}>
-                  <h1 className={classes.title, "textParalax"}>Porto,</h1>
-                  <h1 className={classes.title, "textParalax"}>uma localizaçao privilegiada</h1>
+                  <h1 className={(classes.title, "textParalax")}>Porto,</h1>
+                  <h1 className={(classes.title, "textParalax")}>
+                    uma localizaçao privilegiada
+                  </h1>
                 </div>
               </GridItem>
             </GridContainer>
           </div>
         </Parallax>
-        <Localizacao ref={localizacaoRef} />
-        <Parallax image={require("img/acabamentosParalax.jpg").default}>
+        <Localizacao />
+        <Parallax
+          image={require("img/acabamentosParalax.jpg").default}
+          ref={acabamentosRef}
+        >
           <div className={classes.container}>
             <GridContainer>
-            <GridItem>
+              <GridItem>
                 <div className={classes.brand}>
-                  <h1 className={classes.title, "textParalax"}>Design</h1>
-                  <h1 className={classes.title, "textParalax"}>e acabamentos de luxo</h1>
-
+                  <h1 className={(classes.title, "textParalax")}>Design</h1>
+                  <h1 className={(classes.title, "textParalax")}>
+                    e acabamentos de luxo
+                  </h1>
                 </div>
               </GridItem>
             </GridContainer>
           </div>
         </Parallax>
-        <Acabamentos ref={acabamentosRef} />
-        <Parallax image={require("img/contatosParalax.jpeg").default}>
+        <Acabamentos />
+        <Parallax
+          image={require("img/contatosParalax.jpeg").default}
+          ref={contactosRef}
+        >
           <div className={classes.container}>
             <GridContainer>
-            <GridItem>
+              <GridItem>
                 <div className={classes.brand}>
-                  <h1 className={classes.title, "textParalax"}>Descubra</h1>
-                  <h1 className={classes.title, "textParalax"}>a casa dos seus sonhos</h1>
+                  <h1 className={(classes.title, "textParalax")}>Descubra</h1>
+                  <h1 className={(classes.title, "textParalax")}>
+                    a casa dos seus sonhos
+                  </h1>
                 </div>
               </GridItem>
             </GridContainer>
           </div>
         </Parallax>
-        <Contactos ref={contactosRef} />
+        <Contactos />
         {/* <Switch>
           <Route exact path="/">
             <Redirect to="/home" />

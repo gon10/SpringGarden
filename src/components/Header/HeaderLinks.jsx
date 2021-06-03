@@ -47,9 +47,9 @@ export default function HeaderLinks(props) {
 
   const scrolling = instance => {
     console.log("instance.current.attributes", instance);
-    let node = document.getElementById(instance.current.id);
+    // let node = document.getElementById(instance.current.id);
     window.scrollTo({
-      top: node.offsetTop,
+      top: instance.current.offsetTop,
       behavior: "smooth"
     });
   };
