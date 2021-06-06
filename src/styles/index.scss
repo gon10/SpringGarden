@@ -650,11 +650,13 @@ p {
   text-align: justify;
 }
 .descubramais {
-  font-family: 'Quicksand', sans-serif;
+  //font-family: 'Quicksand', sans-serif;
+  font-family: 'Neue World', sans-serif;
   color: #c7ab62;
   font-size: 20px;
-  font-weight: bold;
+  //font-weight: bold;
   text-align: center;
+  line-height: 1.5;
 }
 
 .descubramais:after {
@@ -700,19 +702,29 @@ p {
   margin: -60px 30px -40px;
 }
 
-/*********************************************************************************/
+/********Typologies css***********************************************************************/
 
 .tipologiasText {
   text-align: center;
+  padding: 10px;
+  margin-top: 20px;
+  color: #848482;
 }
 .typologies {
   position: relative;
   width: 100%;
   min-height: 1px;
-  margin-right: 100px;
-  margin-left: 100px;
-  margin-top: 30px;
+  // margin-right: 100px;
+  //margin-left: 100px;
+  //max-width: 100ch;
 }
+.imageTypologies {
+  height: 60%;
+  object-fit: initial;
+  display: block;
+}
+
+/*********************************************************************************/
 
 .nav-buton {
   color: #c7ab62 !important;
