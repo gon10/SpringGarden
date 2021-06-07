@@ -60,7 +60,7 @@ function App(props) {
           fixed
           color="transparent"
           changeColorOnScroll={{
-            height: 400,
+            height: 40,
             color: "white"
           }}
           {...rest}

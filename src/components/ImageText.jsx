@@ -2,9 +2,17 @@ import React from "react";
 import Button from "components/CustomButtons/Button.js";
 import { Link } from "react-router-dom";
 
-
 const ImageText = props => {
-  const { image, image2, image3, direction, title, summary, bgcolor, separatorlink } = props;
+  const {
+    image,
+    image2,
+    image3,
+    direction,
+    title,
+    summary,
+    bgcolor,
+    separatorlink
+  } = props;
 
   const getDisplayOrder = () => {
     switch (direction) {
@@ -15,11 +23,19 @@ const ImageText = props => {
               <h4>{title}</h4>
               <p>{summary}</p>
               <Link className={"nav-buton"} to={separatorlink}>
-                  <button>Descubra mais!</button>
+                <button>Descubra mais!</button>
               </Link>
             </div>
             <div class="col-12 col-md-6 ">
-              <img src={image} alt="image" className="w-100"></img>
+              <img
+                src={image}
+                alt="image"
+                className="w-100"
+                style={{
+                  clipPath:
+                    "polygon(25% 0%, 100% 0%, 100% 100%, 25% 100%, 0% 50%)"
+                }}
+              ></img>
             </div>
           </>
         );
@@ -28,13 +44,20 @@ const ImageText = props => {
         return (
           <>
             <div class="col-12 col-md-6 ">
-              <img src={image} alt="image" className="w-100"></img>
+              <img
+                src={image}
+                alt="image"
+                className="w-100"
+                style={{
+                  clipPath: "polygon(0 0, 85% 0, 100% 100%, 15% 100%)"
+                }}
+              ></img>
             </div>
             <div class="p-3 col-12 col-md-6 d-flex flex-column justify-content-center align-items-center">
               <h4>{title}</h4>
               <p class="mariana">{summary}</p>
               <Link className={"nav-buton"} to={separatorlink}>
-                  <button>Descubra mais!</button>
+                <button>Descubra mais!</button>
               </Link>
             </div>
           </>
@@ -47,40 +70,40 @@ const ImageText = props => {
               <h4>{title}</h4>
               <p>{summary}</p>
               <Link className={"nav-buton"} to={separatorlink}>
-                  <button>Descubra mais!</button>
+                <button>Descubra mais!</button>
               </Link>
               <img src={image} alt="image" className="w-100"></img>
             </div>
           </>
         );
         break;
-        case "noButtonLeft":
-          return (
-            <>
-              <div class="col-12 col-md-6">
-                <img src={image} alt="image" className="w-100"></img>
-              </div>
-              <div class="p-3 col-12 col-md-6 d-flex flex-column justify-content-center align-items-center">
-                <h4>{title}</h4>
-                <p class="mariana">{summary}</p>
-              </div>
-            </>
-          );
-          break;
-          case "noButtonRight":
-            return (
-              <>
-                <div class="p-3 col-12 col-md-6 d-flex flex-column justify-content-center align-items-center">
-                  <h4>{title}</h4>
-                  <p>{summary}</p>
-                </div>
-                <div class="col-12 col-md-6 ">
-                  <img src={image} alt="image" className="w-100"></img>
-                </div>
-              </>
-            );
-            break;
-        case "imagelong":
+      case "noButtonLeft":
+        return (
+          <>
+            <div class="col-12 col-md-6">
+              <img src={image} alt="image" className="w-100"></img>
+            </div>
+            <div class="p-3 col-12 col-md-6 d-flex flex-column justify-content-center align-items-center">
+              <h4>{title}</h4>
+              <p class="mariana">{summary}</p>
+            </div>
+          </>
+        );
+        break;
+      case "noButtonRight":
+        return (
+          <>
+            <div class="p-3 col-12 col-md-6 d-flex flex-column justify-content-center align-items-center">
+              <h4>{title}</h4>
+              <p>{summary}</p>
+            </div>
+            <div class="col-12 col-md-6 ">
+              <img src={image} alt="image" className="w-100"></img>
+            </div>
+          </>
+        );
+        break;
+      case "imagelong":
         return (
           <>
             <div>
@@ -88,7 +111,7 @@ const ImageText = props => {
             </div>
           </>
         );
-        break;   
+        break;
 
       default:
         return (

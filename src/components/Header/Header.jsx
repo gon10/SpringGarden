@@ -46,6 +46,9 @@ export default function Header(props) {
       document.body
         .getElementsByTagName("header")[0]
         .classList.add(classes[changeColorOnScroll.color]);
+      document.body
+        .getElementsByTagName("header")[0]
+        .classList.remove("backgroundLinear");
     } else {
       document.body
         .getElementsByTagName("header")[0]
@@ -53,6 +56,9 @@ export default function Header(props) {
       document.body
         .getElementsByTagName("header")[0]
         .classList.remove(classes[changeColorOnScroll.color]);
+      document.body
+        .getElementsByTagName("header")[0]
+        .classList.add("backgroundLinear");
     }
   };
   const { color, rightLinks, leftLinks, brand, fixed, absolute } = props;
@@ -64,7 +70,7 @@ export default function Header(props) {
   });
   const brandComponent = <Button className={classes.title}>{brand}</Button>;
   return (
-    <AppBar className={appBarClasses}>
+    <AppBar className={`${appBarClasses} backgroundLinear`}>
       <Toolbar className={classes.container}>
         {leftLinks !== undefined ? brandComponent : null}
         <div className={classes.flex}>
