@@ -36,7 +36,7 @@ const Home = React.forwardRef((props, ref) => {
             "EdifÍcio de cor serena dotado de uma arquitectura contemporânea e integrando extensos jardins. Com Apartamentos de Tipologia T1, T2, T3 e T4, este bloco de apartamentos tem tudo para se tornar a sua nova casa"
           }
           direction="left"
-          bgcolor="#fff"
+          bgcolor="#f6f4f1"
           separatorlink="/tipologias"
         ></ImageText>
 
@@ -47,7 +47,7 @@ const Home = React.forwardRef((props, ref) => {
             "O empreendimento Spring Garden Residences está a nascer na Boavista. Localizado numa importante artéria do Porto, bastante próximo da baixa da cidade e das magníficas praias."
           }
           direction="right"
-          bgcolor="white"
+          bgcolor="#f6f4f1"
           separatorlink="/localizacao"
         ></ImageText>
 
@@ -58,7 +58,7 @@ const Home = React.forwardRef((props, ref) => {
             "O nível dos acabamentos acompanha a qualidade de construção através da adoção de soluções construtivas de eficácia comprovada e da seleção de materiais de marcas conceituadas e de qualidade altíssima."
           }
           direction="left"
-          bgcolor="white"
+          bgcolor="#f6f4f1"
           separatorlink="/acabamentos"
         ></ImageText>
       </div>
