@@ -13,6 +13,8 @@ import { makeStyles } from "@material-ui/core/styles";
 import styles from "assets/jss/material-kit-react/views/components.js";
 import SectionCarousel from "components/Carousel/SectionCarousel";
 import { useTranslation } from "react-i18next";
+import homeImage from "../img/sg-removebg.png";
+import { Height } from "@material-ui/icons";
 
 const useStyles = makeStyles(styles);
 
@@ -28,7 +30,16 @@ const Home = React.forwardRef((props, ref) => {
         id="home-container"
         className={classNames(classes.main, classes.mainRaised)}
       >
-        <SectionCarousel />
+        {/* <SectionCarousel /> */}
+        <div class="p-3 col-12 d-flex flex-column justify-content-center align-items-center">
+          <img
+            src={homeImage}
+            alt="image"
+            style={{ maxWidth: "200px", height: "auto" }}
+          ></img>
+          <h6 className="descubramais"></h6>
+        </div>
+
         <ImageText
           image={image}
           title={t("imagetext.title_typologies")}

@@ -43,7 +43,7 @@ const ImageText = props => {
       case "left":
         return (
           <>
-            <div class="col-12 col-md-6 ">
+            <div class="col-12 col-md-6 position-relative">
               <img
                 src={image}
                 alt="image"
@@ -51,6 +51,21 @@ const ImageText = props => {
                 style={{
                   clipPath: "polygon(0 0, 85% 0, 100% 100%, 15% 100%)"
                 }}
+              ></img>
+              <img
+                className="leaf1"
+                src="https://assets.codepen.io/2621168/leaf1.png"
+                alt="leaf"
+              ></img>
+              <img
+                className="leaf2"
+                src="https://assets.codepen.io/2621168/leaf2.png"
+                alt="leaf"
+              ></img>
+              <img
+                className="leaf3"
+                src="https://assets.codepen.io/2621168/leaf3.png"
+                alt="leaf"
               ></img>
             </div>
             <div class="p-3 col-12 col-md-6 d-flex flex-column justify-content-center align-items-center">
