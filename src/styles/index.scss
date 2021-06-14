@@ -665,8 +665,8 @@ p {
 .descubramais:after {
   content: " ";
   display: block;
-  width: 100px;
-  height: 1px;
+  width: clamp(1.5rem, 200px, 30rem);
+  height: 2px;
   background-color: #c7ab62;
   margin-left: auto;
   margin-right: auto;
@@ -675,7 +675,7 @@ p {
 }
 
 .descubramais:hover:after {
-  width: 200px;
+  width: clamp(1.5rem, 400px, 60vw);
 }
 
 /***************Containers marging and padding*************************************/
