@@ -48,7 +48,7 @@ export default function Header(props) {
         .classList.add(classes[changeColorOnScroll.color]);
       document.body
         .getElementsByTagName("header")[0]
-        .classList.remove("backgroundLinear");
+        .classList.remove(classes.displayNone);
     } else {
       document.body
         .getElementsByTagName("header")[0]
@@ -58,7 +58,7 @@ export default function Header(props) {
         .classList.remove(classes[changeColorOnScroll.color]);
       document.body
         .getElementsByTagName("header")[0]
-        .classList.add("backgroundLinear");
+        .classList.add(classes.displayNone);
     }
   };
   const { color, rightLinks, leftLinks, brand, fixed, absolute } = props;
@@ -66,11 +66,12 @@ export default function Header(props) {
     [classes.appBar]: true,
     [classes[color]]: color,
     [classes.absolute]: absolute,
-    [classes.fixed]: fixed
+    [classes.fixed]: fixed,
+    [classes.displayNone]: true
   });
   const brandComponent = <Button className={classes.title}>{brand}</Button>;
   return (
-    <AppBar className={`${appBarClasses} backgroundLinear`}>
+    <AppBar className={`${appBarClasses}`}>
       <Toolbar className={classes.container}>
         {leftLinks !== undefined ? brandComponent : null}
         <div className={classes.flex}>
