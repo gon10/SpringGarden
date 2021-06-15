@@ -2,6 +2,10 @@ import React from "react";
 import Button from "components/CustomButtons/Button.js";
 import { Link } from "react-router-dom";
 
+import folha from "../img/folha-removebg.png";
+import folha2 from "../img/folha2-removebg.png";
+import folha3 from "../img/folha3-removebg.png";
+
 const ImageText = props => {
   const {
     image,
@@ -52,21 +56,9 @@ const ImageText = props => {
                   clipPath: "polygon(0 0, 85% 0, 100% 100%, 15% 100%)"
                 }}
               ></img>
-              <img
-                className="leaf1"
-                src="https://assets.codepen.io/2621168/leaf1.png"
-                alt="leaf"
-              ></img>
-              <img
-                className="leaf2"
-                src="https://assets.codepen.io/2621168/leaf2.png"
-                alt="leaf"
-              ></img>
-              <img
-                className="leaf3"
-                src="https://assets.codepen.io/2621168/leaf3.png"
-                alt="leaf"
-              ></img>
+              <img className="leaf1" src={folha} alt="leaf"></img>
+              <img className="leaf2" src={folha2} alt="leaf"></img>
+              <img className="leaf3" src={folha3} alt="leaf"></img>
             </div>
             <div class="p-3 col-12 col-md-6 d-flex flex-column justify-content-center align-items-center">
               <h4>{title}</h4>

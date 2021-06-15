@@ -13,7 +13,8 @@ import { makeStyles } from "@material-ui/core/styles";
 import styles from "assets/jss/material-kit-react/views/components.js";
 import SectionCarousel from "components/Carousel/SectionCarousel";
 import { useTranslation } from "react-i18next";
-import homeImage from "../img/sg-removebg.png";
+import homeImage from "../img/logo-removebg.png";
+import homeImageLeafes from "../img/6437685_preview.png";
 import { Height } from "@material-ui/icons";
 
 const useStyles = makeStyles(styles);
@@ -31,14 +32,32 @@ const Home = React.forwardRef((props, ref) => {
         className={classNames(classes.main, classes.mainRaised)}
       >
         {/* <SectionCarousel /> */}
-        <div class="p-3 col-12 d-flex flex-column justify-content-center align-items-center">
+        <div class="p-3 col-12 d-flex flex-row justify-content-center align-items-center">
+          <img
+            src={homeImageLeafes}
+            alt="image"
+            style={{
+              maxWidth: "130px",
+              height: "auto",
+              transform: "rotate(90deg)"
+            }}
+          ></img>
           <img
             src={homeImage}
             alt="image"
-            style={{ maxWidth: "200px", height: "auto" }}
+            style={{ maxWidth: "130px", height: "auto" }}
           ></img>
-          <h6 className="descubramais"></h6>
+          <img
+            src={homeImageLeafes}
+            alt="image"
+            style={{
+              maxWidth: "130px",
+              height: "auto",
+              transform: "rotate(270deg) scaleX(-1)"
+            }}
+          ></img>
         </div>
+        {/* <h6 className="descubramais"></h6> */}
 
         <ImageText
           image={image}
