@@ -1,7 +1,7 @@
-@import "~bootstrap/scss/bootstrap.scss";
-@import url("https://fonts.googleapis.com/css?family=Lato:300,400,700");
-@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Nanum+Gothic&family=Noto+Sans+SC:wght@300&family=Quicksand:wght@300;400&display=swap");
+@import '~bootstrap/scss/bootstrap.scss';
+@import url('https://fonts.googleapis.com/css?family=Lato:300,400,700');
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Gothic&family=Noto+Sans+SC:wght@300&family=Quicksand:wght@300;400&display=swap');
 
 /*****************STARTS TOP BACKGROUND SECTION***************/
 #stars {
@@ -186,7 +186,7 @@
     69px 1852px #fff, 878px 300px #fff, 730px 726px #fff, 1137px 68px #fff;
   animation: animStar 50s linear infinite;
   &:after {
-    content: " ";
+    content: ' ';
     position: relative;
     top: 2000px;
     width: 1px;
@@ -444,7 +444,7 @@
     782px 598px #fff, 1709px 1377px #fff, 717px 1040px #fff;
   animation: animStar 100s linear infinite;
   &:after {
-    content: " ";
+    content: ' ';
     position: relative;
     top: 2000px;
     width: 2px;
@@ -539,7 +539,7 @@
     1747px 1800px #fff;
   animation: animStar 150s linear infinite;
   &:after {
-    content: "";
+    content: '';
     position: relative;
     top: 2000px;
     width: 3px;
@@ -606,7 +606,7 @@
 
 .h3 {
   color: #fff;
-  font-family: "Noto Sans SC", sans-serif;
+  font-family: 'Noto Sans SC', sans-serif;
 }
 /*****Botao descubra mais!**************************************************************************/
 button {
@@ -614,7 +614,7 @@ button {
 
   color: #1d1d1d;
   border: 2px solid #1d1d1d;
-  font-family: "Montserrat", sans-serif;
+  font-family: 'Montserrat', sans-serif;
 
   text-align: center;
   line-height: 1;
@@ -630,30 +630,30 @@ button:hover {
 }
 /*********************************************************************************/
 h4 {
-  font-family: "Quicksand", sans-serif;
+  font-family: 'Quicksand', sans-serif;
   color: #1d1d1d;
 }
 
-p {
-  font-family: "Noto Sans SC", sans-serif;
+.summaryText {
+  font-family: 'Noto Sans SC', sans-serif;
   color: #848482;
   text-align: justify;
 }
 /***Carousel css text***********************************************************************/
 
 .springardenlogo {
-  font-family: "Quicksand", sans-serif;
+  font-family: 'Quicksand', sans-serif;
   color: #c7ab62;
 }
 
 .springardenIntro {
-  font-family: "Noto Sans SC", sans-serif;
+  font-family: 'Noto Sans SC', sans-serif;
   color: #848482;
   text-align: justify;
 }
 .descubramais {
   //font-family: 'Quicksand', sans-serif;
-  font-family: "Neue World", sans-serif;
+  font-family: 'Neue World', sans-serif;
 
   color: #c7ab62;
   font-size: 20px;
@@ -663,7 +663,7 @@ p {
 }
 
 .descubramais:after {
-  content: " ";
+  content: ' ';
   display: block;
   width: 100px;
   height: 1px;
@@ -879,7 +879,7 @@ footer h3 {
 }
 
 .testbg {
-  background-image: url("../img/Vmarine.jpg");
+  background-image: url('../img/Vmarine.jpg');
   height: 400px;
   background-position: center;
   background-repeat: no-repeat;
@@ -887,14 +887,14 @@ footer h3 {
 }
 
 .aguabg {
-  background-image: url("../img/aguaDeLuz.png");
+  background-image: url('../img/aguaDeLuz.png');
   height: 400px;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
 }
 .todobg {
-  background-image: url("../img/todolist.png");
+  background-image: url('../img/todolist.png');
   height: 400px;
   background-position: center;
   background-repeat: no-repeat;
@@ -1111,4 +1111,99 @@ footer h3 {
     width: 100%;
     height: 100%;
   }
+}
+//teste
+.square {
+  float: left;
+  position: relative;
+  width: 30%;
+  padding-bottom: 30%;
+  margin: 1.66%;
+  background-color: #e0d3d3;
+  overflow: hidden;
+}
+.square:after {
+  content: '';
+  display: block;
+  padding-bottom: 100%;
+}
+.content {
+  position: absolute;
+  height: 90%;
+  width: 90%;
+  padding: 5%;
+}
+.table {
+  display: table;
+  width: 100%;
+  height: 100%;
+}
+.table-cell {
+  display: table-cell;
+  vertical-align: middle;
+}
+/*  For list */
+ul {
+  text-align: left;
+  margin: 5% 0 0;
+  padding: 0;
+  list-style-position: inside;
+}
+li {
+  margin: 0 0 0 5%;
+  padding: 0;
+}
+
+/*  For responsive images */
+
+.content .rs {
+  width: auto;
+  height: auto;
+  max-height: 90%;
+  max-width: 100%;
+}
+
+/*  following just for the demo */
+
+body {
+  font-size: 20px;
+  font-family: 'Lato', verdana, sans-serif;
+  color: #fff;
+  text-align: center;
+  background: #ececec;
+}
+p {
+  margin: 0;
+  padding: 0;
+  text-align: left;
+}
+
+#bottom {
+  clear: both;
+  margin: 0 1.66%;
+  width: 89.68%;
+  padding: 3.5%;
+  background-color: #1e1e1e;
+  color: #fff;
+}
+#bottom p {
+  text-align: center;
+  line-height: 2em;
+}
+#bottom a {
+  color: #000;
+  text-decoration: none;
+  border: 1px solid #000;
+  padding: 10px 20px 12px;
+  line-height: 70px;
+  background: #ccc;
+
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+}
+
+#bottom a:hover {
+  background: #ececec;
+  border: 1px solid #fff;
 }
