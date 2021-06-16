@@ -14,7 +14,7 @@ const Acabamentos = React.forwardRef((props, ref) => {
       className={classNames(classes.main, classes.mainRaised)}
     >
       <SectionCarousel />
-<section className="elementor-section elementor-top-section elementor-element elementor-element-8b95306 elementor-section-boxed elementor-section-height-default elementor-section-height-default elementor-motion-effects-element" data-id="8b95306" data-element_type="section" data-settings="">
+{/* <section className="elementor-section elementor-top-section elementor-element elementor-element-8b95306 elementor-section-boxed elementor-section-height-default elementor-section-height-default elementor-motion-effects-element" data-id="8b95306" data-element_type="section" data-settings="">
     <div className="elementor-container elementor-column-gap-default">
 
       <section className="elementor-section elementor-inner-section elementor-element elementor-element-fe18030 elementor-section-full_width elementor-section-height-default elementor-section-height-default" data-id="fe18030" data-element_type="section">
@@ -83,16 +83,15 @@ const Acabamentos = React.forwardRef((props, ref) => {
 
       </section>
       </div>
-      </section>
+      </section> */}
 
 
-      <div className="square">
-    <div className="content">
+<div className="square">
+   <div className="content">
         <div className="table">
             <div className="table-cell">
-                <ul >
-                   <li>Mármore Guangxi White nas cozinhas e WC</li>
-                </ul>
+                <img className="rs" src="https://acquadalva.pt/wp-content/uploads/2021/04/marmore.png"/>
+                Mármore Guangxi White
             </div>
         </div>
     </div>
@@ -101,7 +100,29 @@ const Acabamentos = React.forwardRef((props, ref) => {
     <div className="content">
         <div className="table">
             <div className="table-cell">
-                    98%
+               <img className="rs" src="https://acquadalva.pt/wp-content/uploads/2021/04/ar-condicionado.png"/>
+               Ar Condicionado
+            </div>
+        </div>
+    </div>
+</div>
+<div className="square">
+   <div className="content">
+        <div className="table">
+            <div className="table-cell">
+                <img className="rs" src="https://acquadalva.pt/wp-content/uploads/2021/04/pavimento-flutuante.png"/>
+                Pavimento flutuante
+            </div>
+        </div>
+    </div>
+</div>
+
+<div className="square">
+   <div className="content">
+        <div className="table">
+            <div className="table-cell">
+                <img className="rs" src="https://acquadalva.pt/wp-content/uploads/2021/04/eletrodomesticos.png"/>
+                Eletrodomésticos encastráveis tipo Bosch
             </div>
         </div>
     </div>
@@ -109,39 +130,19 @@ const Acabamentos = React.forwardRef((props, ref) => {
 <div className="square">
     <div className="content">
         <div className="table">
-            <div className="table-cell">               
-                3.9/5
+            <div className="table-cell">
+               <img className="rs" src="https://acquadalva.pt/wp-content/uploads/2021/04/armario.png"/>
+               Armário lacado a branco
             </div>
         </div>
     </div>
 </div>
-
 <div className="square">
    <div className="content">
         <div className="table">
             <div className="table-cell">
                 <img className="rs" src="https://acquadalva.pt/wp-content/uploads/2021/04/estores.png"/>
-                Responsive image.
-            </div>
-        </div>
-    </div>
-</div>
-<div className="square">
-    <div className="content">
-        <div className="table">
-            <div className="table-cell">
-               <img className="rs" src="https://farm9.staticflickr.com/8461/8048823381_0fbc2d8efb.jpg"/>
-                Responsive image.
-            </div>
-        </div>
-    </div>
-</div>
-<div className="square">
-   <div className="content">
-        <div className="table">
-            <div className="table-cell">
-                <img className="rs" src="https://farm5.staticflickr.com/4144/5053682635_b348b24698.jpg"/>
-                Responsive image.
+                Estores interiores nos quartos tipo “Blackout”
             </div>
         </div>
     </div>
