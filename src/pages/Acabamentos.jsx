@@ -13,165 +13,49 @@ const Acabamentos = React.forwardRef((props, ref) => {
       id="acabamentos-container"
       className={classNames(classes.main, classes.mainRaised)}
     >
-      <SectionCarousel />
-{/* <section className="elementor-section elementor-top-section elementor-element elementor-element-8b95306 elementor-section-boxed elementor-section-height-default elementor-section-height-default elementor-motion-effects-element" data-id="8b95306" data-element_type="section" data-settings="">
-    <div className="elementor-container elementor-column-gap-default">
-
-      <section className="elementor-section elementor-inner-section elementor-element elementor-element-fe18030 elementor-section-full_width elementor-section-height-default elementor-section-height-default" data-id="fe18030" data-element_type="section">
-        <div className = "elementor-container elementor-column-gap-default">
-          <div className="elementor-column elementor-col-25 elementor-inner-column elementor-element elementor-element-8d09df1 animated fadeInUp" data-id="8d09df1" data-element_type="column" data-settings="">
-            <div className = "elementor-widget-wrap elementor-element-populated">
-              <div className = "elementor-background-overlay"></div>
-              <div className = "elementor-element elementor-element-fdb1424 elementor-widget elementor-widget-image" data-id="fdb1424" data-element_type="widget" data-widget_type="image.default">
-                <div className = "elementor-widget-container">
-                  <img width="512" height="512" src="https://acquadalva.pt/wp-content/uploads/2021/04/pavimento-flutuante.png" className="attachment-large size-large" alt loading="lazy" srcset="https://acquadalva.pt/wp-content/uploads/2021/04/pavimento-flutuante.png 512w, https://acquadalva.pt/wp-content/uploads/2021/04/pavimento-flutuante-300x300.png 300w, https://acquadalva.pt/wp-content/uploads/2021/04/pavimento-flutuante-150x150.png 150w" sizes="(max-width: 512px) 100vw, 512px"></img>
-                </div>
-              </div>
-              <div className = "elementor-element elementor-element-f7ea8f5 elementor-widget elementor-widget-heading" data-id="f7ea8f5" data-element_type="widget" data-widget_type="heading.default">
-                <div className = "elementor-widget-container">
-                  <p className = "elementor-heading-title elementor-size-default">Pavimento flutuante</p>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div className="elementor-column elementor-col-25 elementor-inner-column elementor-element elementor-element-8d09df1 animated fadeInUp" data-id="cee7b0a" data-element_type="column" data-settings="">
-            <div className = "elementor-widget-wrap elementor-element-populated">
-              <div className = "elementor-background-overlay"></div>
-              <div className = "elementor-element elementor-element-fdb1424 elementor-widget elementor-widget-image" data-id="0d2606a" data-element_type="widget" data-widget_type="image.default">
-                <div className = "elementor-widget-container">
-                  <img width="512" height="512" src="https://acquadalva.pt/wp-content/uploads/2021/04/marmore.png" className="attachment-large size-large" alt loading="lazy" srcset="https://acquadalva.pt/wp-content/uploads/2021/04/marmore.png 512w, https://acquadalva.pt/wp-content/uploads/2021/04/marmore-300x300.png 300w, https://acquadalva.pt/wp-content/uploads/2021/04/marmore-150x150.png 150w" sizes="(max-width: 512px) 100vw, 512px"></img>
-                </div>
-              </div>
-              <div className = "elementor-element elementor-element-f7ea8f5 elementor-widget elementor-widget-heading" data-id="0feeb76" data-element_type="widget" data-widget_type="heading.default">
-                <div className = "elementor-widget-container">
-                  <p className = "elementor-heading-title elementor-size-default">Mármore Guangxi White nas cozinhas e WC</p>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div className="elementor-column elementor-col-25 elementor-inner-column elementor-element elementor-element-5f87b1b animated fadeInUp" data-id="5f87b1b" data-element_type="column" data-settings="">
-            <div className = "elementor-widget-wrap elementor-element-populated">
-              <div className = "elementor-background-overlay"></div>
-              <div className = "elementor-element elementor-element-21bcc92 elementor-widget elementor-widget-image" data-id="21bcc92" data-element_type="widget" data-widget_type="image.default">
-                <div className = "elementor-widget-container">
-                  <img width="512" height="512" src="https://acquadalva.pt/wp-content/uploads/2021/04/armario.png" className="attachment-large size-large" alt loading="lazy" srcset="https://acquadalva.pt/wp-content/uploads/2021/04/armario.png 512w, https://acquadalva.pt/wp-content/uploads/2021/04/armario-300x300.png 300w, https://acquadalva.pt/wp-content/uploads/2021/04/armario-150x150.png 150w" sizes="(max-width: 512px) 100vw, 512px"></img>
-                </div>
-              </div>
-              <div className = "elementor-element elementor-element-74c6aa0 elementor-widget elementor-widget-heading" data-id="74c6aa0" data-element_type="widget" data-widget_type="heading.default">
-                <div className = "elementor-widget-container">
-                  <p className = "elementor-heading-title elementor-size-default">Armário lacado a branco e folheado a pinho</p>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div className="elementor-column elementor-col-25 elementor-inner-column elementor-element elementor-element-be752b9 animated fadeInUp" data-id="be752b9" data-element_type="column" data-settings="">
-            <div className = "elementor-widget-wrap elementor-element-populated">
-              <div className = "elementor-background-overlay"></div>
-              <div className = "elementor-element elementor-element-6dffefa elementor-widget elementor-widget-image" data-id="6dffefa" data-element_type="widget" data-widget_type="image.default">
-                <div className = "elementor-widget-container">
-                  <img width="512" height="512" src="https://acquadalva.pt/wp-content/uploads/2021/04/estores.png" className="attachment-large size-large" alt loading="lazy" srcset="https://acquadalva.pt/wp-content/uploads/2021/04/estores.png 512w, https://acquadalva.pt/wp-content/uploads/2021/04/estores-300x300.png 300w, https://acquadalva.pt/wp-content/uploads/2021/04/estores-150x150.png 150w" sizes="(max-width: 512px) 100vw, 512px"></img>
-                </div>
-              </div>
-              <div className = "elementor-element elementor-element-71fd9cd elementor-widget elementor-widget-heading" data-id="71fd9cd" data-element_type="widget" data-widget_type="heading.default">
-                <div className = "elementor-widget-container">
-                  <p className = "elementor-heading-title elementor-size-default">Estores interiores nos quartos tipo “Blackout”</p>
-                </div>
-              </div>
-            </div>
-          </div>         
-        </div>
-
-      </section>
+      {/* <SectionCarousel /> */}
+      <div>
+          <h5 className="summaryText">
+          O nível dos acabamentos acompanha a qualidade de construção através da adoção de soluções construtivas de eficácia comprovada e da seleção de materiais de marcas conceituadas e de qualidade altíssima. Começando na fachada e na caixilharia, passando pelas bancadas e carpintarias, até aos equipamentos e eletrodomésticos, a escolha é coerente e a sua qualidade transversal.
+          </h5>
       </div>
-      </section> */}
 
-
-<div className="square">
-   <div className="content">
-        <div className="table">
-            <div className="table-cell">
-                <img className="rs" src="https://acquadalva.pt/wp-content/uploads/2021/04/marmore.png"/>
-                Mármore Guangxi White
-            </div>
-        </div>
-    </div>
-</div>
-<div className="square">
-    <div className="content">
-        <div className="table">
-            <div className="table-cell">
-               <img className="rs" src="https://acquadalva.pt/wp-content/uploads/2021/04/ar-condicionado.png"/>
-               Ar Condicionado
-            </div>
-        </div>
-    </div>
-</div>
-<div className="square">
-   <div className="content">
-        <div className="table">
-            <div className="table-cell">
-                <img className="rs" src="https://acquadalva.pt/wp-content/uploads/2021/04/pavimento-flutuante.png"/>
-                Pavimento flutuante
-            </div>
-        </div>
-    </div>
-</div>
-
-<div className="square">
-   <div className="content">
-        <div className="table">
-            <div className="table-cell">
+        <div style = {{display: "flex", flexWrap: "wrap", justifyContent: "center"}}> 
+          <div className="square">
+            <img className="rs" src="https://acquadalva.pt/wp-content/uploads/2021/04/marmore.png"/>
+              <p>Mármore Guangxi White</p>
+          </div>
+          <div className="square">
+            <img className="rs" src="https://acquadalva.pt/wp-content/uploads/2021/04/ar-condicionado.png"/>
+              <p>Ar Condicionado</p>
+          </div>
+          <div className="square">
+                <img className="rs" loading="lazy" src="https://acquadalva.pt/wp-content/uploads/2021/04/pavimento-flutuante.png"/>
+                <p>Pavimento flutuante</p>
+          </div>
+          <div className="square">
                 <img className="rs" src="https://acquadalva.pt/wp-content/uploads/2021/04/eletrodomesticos.png"/>
-                Eletrodomésticos encastráveis tipo Bosch
-            </div>
-        </div>
-    </div>
-</div>
-<div className="square">
-    <div className="content">
-        <div className="table">
-            <div className="table-cell">
+                <p>Eletrodomésticos encastráveis tipo Bosch</p>
+          </div>
+          <div className="square">
                <img className="rs" src="https://acquadalva.pt/wp-content/uploads/2021/04/armario.png"/>
-               Armário lacado a branco
-            </div>
-        </div>
-    </div>
-</div>
-<div className="square">
-   <div className="content">
-        <div className="table">
-            <div className="table-cell">
+               <p>Armário lacado a branco</p>
+          </div>
+          <div className="square">
                 <img className="rs" src="https://acquadalva.pt/wp-content/uploads/2021/04/estores.png"/>
-                Estores interiores nos quartos tipo “Blackout”
-            </div>
+                <p>Estores interiores nos quartos tipo “Blackout”</p>
+          </div>
+          <div className="square">
+                <img className="rs" src="https://acquadalva.pt/wp-content/uploads/2021/04/video.png"/>
+                <p>Video-Porteiro</p>
+          </div>
+          <div className="square">
+                <img className="rs" src="https://acquadalva.pt/wp-content/uploads/2021/04/aspiracao.png"/>
+                <p>Aspiração Central</p>
+          </div>
+
         </div>
-    </div>
-</div>
 
-
-
-
-
-
-      Acabamentos
-      <br />
-      Lorem Ipsum is simply dummy text of the printing and typesetting industry.
-      Lorem Ipsum has been the industry's standard dummy text ever since the
-      1500s, when an unknown printer took a galley of type and scrambled it to
-      make a type specimen book. It has survived not only five centuries, but
-      also the leap into electronic typesetting, remaining essentially
-      unchanged. It was popularised in the 1960s with the release of Letraset
-      sheets containing Lorem Ipsum passages, and more recently with desktop
-      publishing software like Aldus PageMaker including versions of Lorem Ipsum
-      <br />
-      Lorem Ipsum is simply dummy text of the printing and typesetting industry.
-      Lorem Ipsum has been the industry's standard dummy text ever since the
-      1500s, when an unknown printer took a galley of type and scrambled it to
-      make a type specimen book. It has survived not only five centuries, but
-      also the leap into electronic typesetting, remaining essentially
-      unchanged. It was popularised in the 1960s with the release of Letraset
-      sheets containing Lorem Ipsum passages, and more recently with desktop
-      publishing software like Aldus PageMaker including versions of Lorem Ipsum
     </div>
   );
 });

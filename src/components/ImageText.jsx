@@ -24,7 +24,7 @@ const ImageText = props => {
         return (
           <>
             <div class="p-3 col-12 col-md-6 d-flex flex-column justify-content-center align-items-center">
-              <h4>{title}</h4>
+              <h4 className="titleText">{title}</h4>
               <p className="summaryText">{summary}</p>
               <Link className={"nav-buton"} to={separatorlink}>
                 <button>Descubra mais!</button>
@@ -37,7 +37,7 @@ const ImageText = props => {
                 className="w-100"
                 style={{
                   clipPath:
-                    "polygon(25% 0%, 100% 0%, 100% 100%, 25% 100%, 0% 50%)"
+                    "circle(50% at 50% 50%)"
                 }}
               ></img>
             </div>
@@ -53,7 +53,7 @@ const ImageText = props => {
                 alt="image"
                 className="w-100"
                 style={{
-                  clipPath: "polygon(0 0, 85% 0, 100% 100%, 15% 100%)"
+                  clipPath: "circle(50% at 50% 50%)"
                 }}
               ></img>
               <img className="leaf1" src={folha} alt="leaf"></img>
@@ -61,7 +61,7 @@ const ImageText = props => {
               <img className="leaf3" src={folha3} alt="leaf"></img>
             </div>
             <div class="p-3 col-12 col-md-6 d-flex flex-column justify-content-center align-items-center">
-              <h4>{title}</h4>
+              <h4 className="titleText">{title}</h4>
               <p className="summaryText">{summary}</p>
               <Link className={"nav-buton"} to={separatorlink}>
                 <button>Descubra mais!</button>
@@ -74,7 +74,7 @@ const ImageText = props => {
         return (
           <>
             <div class="p-3 col-12 col-md-12 d-flex flex-column justify-content-center align-items-center">
-              <h4>{title}</h4>
+              <h4 className="titleText">{title}</h4>
               <p className="summaryText">{summary}</p>
               <Link className={"nav-buton"} to={separatorlink}>
                 <button>Descubra mais!</button>
@@ -91,7 +91,7 @@ const ImageText = props => {
               <img src={image} alt="image" className="w-100"></img>
             </div>
             <div class="p-3 col-12 col-md-6 d-flex flex-column justify-content-center align-items-center">
-              <h4>{title}</h4>
+              <h4 className="titleText">{title}</h4>
               <p className="summaryText">{summary}</p>
             </div>
           </>
@@ -101,7 +101,7 @@ const ImageText = props => {
         return (
           <>
             <div class="p-3 col-12 col-md-6 d-flex flex-column justify-content-center align-items-center">
-              <h4>{title}</h4>
+              <h4 className="titleText">{title}</h4>
               <p className="summaryText">{summary}</p>
             </div>
             <div class="col-12 col-md-6 ">
@@ -124,7 +124,7 @@ const ImageText = props => {
         return (
           <>
             <div class="p-3 col-12 col-md-6 d-flex flex-column justify-content-center align-items-center">
-              <h4>{title}</h4>
+              <h4 className="titleText">{title}</h4>
               <p className="summaryText">{summary}</p>
               <button>Saiba mais</button>
             </div>

@@ -42,6 +42,12 @@ const Home = React.forwardRef((props, ref) => {
               transform: "rotate(90deg)"
             }}
           ></img>
+          <br/>
+          <br/>
+          <br/>
+          <br/>
+          <br/>
+          <br/>
           <img
             src={homeImage}
             alt="image"
