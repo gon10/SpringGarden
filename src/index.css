@@ -10,10 +10,10 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  /* background-image: url(/src/img/testepila.png);
+  background-image: url(/src/img/exemploImgParalax.jpg);
   background-attachment: fixed;
   background-size: cover;
-  background-position: center center; */
+  background-position: center center;
 }
 
 body::before {
