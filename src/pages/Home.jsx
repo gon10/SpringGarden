@@ -42,12 +42,6 @@ const Home = React.forwardRef((props, ref) => {
               transform: "rotate(90deg)"
             }}
           ></img>
-          <br/>
-          <br/>
-          <br/>
-          <br/>
-          <br/>
-          <br/>
           <img
             src={homeImage}
             alt="image"
@@ -69,7 +63,7 @@ const Home = React.forwardRef((props, ref) => {
           image={image}
           title={t("imagetext.title_typologies")}
           summary={
-            "EdifÍcio de cor serena dotado de uma arquitectura contemporânea e integrando extensos jardins. Com Apartamentos de Tipologia T1, T2, T3 e T4, este bloco de apartamentos tem tudo para se tornar a sua nova casa"
+            "Edifício de cor serena dotado de uma arquitectura contemporânea e integrando extensos jardins. Com Apartamentos de Tipologia T1, T2, T3 e T4, este bloco de apartamentos tem tudo para se tornar a sua nova casa"
           }
           direction="left"
           bgcolor="#f6f4f1"

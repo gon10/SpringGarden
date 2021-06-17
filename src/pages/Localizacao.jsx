@@ -25,8 +25,6 @@ const Localizacao = React.forwardRef((props, ref) => {
       <h6 className="descubramais">
         UMA OPORTUNIDADe ÚNICA PARA MORAR OU INVESTIR NO PORTO!
       </h6>
-      <br />
-      <br />
       <ImageText
         image={imagePalacio}
         title={

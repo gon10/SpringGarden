@@ -79,7 +79,14 @@ const ImageText = props => {
               <Link className={"nav-buton"} to={separatorlink}>
                 <button>Descubra mais!</button>
               </Link>
-              <img src={image} alt="image" className="w-100"></img>
+              <img 
+                src={image} 
+                alt="image" 
+                className="w-100"
+                style={{
+                  clipPath: "circle(50% at 50% 50%)"
+                }}>
+                </img>
             </div>
           </>
         );
@@ -88,7 +95,14 @@ const ImageText = props => {
         return (
           <>
             <div class="col-12 col-md-6">
-              <img src={image} alt="image" className="w-100"></img>
+              <img 
+                 src={image} 
+                 alt="image" 
+                 className="w-100"
+                 style={{
+                 clipPath: "circle(50% at 50% 50%)"
+                 }}>
+              </img>
             </div>
             <div class="p-3 col-12 col-md-6 d-flex flex-column justify-content-center align-items-center">
               <h4 className="titleText">{title}</h4>
@@ -105,7 +119,14 @@ const ImageText = props => {
               <p className="summaryText">{summary}</p>
             </div>
             <div class="col-12 col-md-6 ">
-              <img src={image} alt="image" className="w-100"></img>
+              <img 
+                 src={image} 
+                 alt="image" 
+                  className="w-100"
+                 style={{
+                    clipPath: "circle(50% at 50% 50%)"
+                 }}>
+              </img>
             </div>
           </>
         );

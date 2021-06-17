@@ -2,7 +2,13 @@ import React from "react";
 import styles from "assets/jss/material-kit-react/views/components.js";
 import { makeStyles } from "@material-ui/core/styles";
 import classNames from "classnames";
-import SectionCarousel from "components/Carousel/SectionCarousel";
+//import SectionCarousel from "components/Carousel/SectionCarousel";
+import ImageText from "../components/ImageText";
+import imageAcabamentos from "../img/wall.jpg";
+import imageDetalhes from "../img/banho-2.jpg";
+
+
+
 const useStyles = makeStyles(styles);
 
 const Acabamentos = React.forwardRef((props, ref) => {
@@ -13,12 +19,34 @@ const Acabamentos = React.forwardRef((props, ref) => {
       id="acabamentos-container"
       className={classNames(classes.main, classes.mainRaised)}
     >
+      <h6 className="descubramais">
+        O segredo está nos detalhes!
+      </h6>
       {/* <SectionCarousel /> */}
-      <div>
-          <h5 className="summaryText">
-          O nível dos acabamentos acompanha a qualidade de construção através da adoção de soluções construtivas de eficácia comprovada e da seleção de materiais de marcas conceituadas e de qualidade altíssima. Começando na fachada e na caixilharia, passando pelas bancadas e carpintarias, até aos equipamentos e eletrodomésticos, a escolha é coerente e a sua qualidade transversal.
-          </h5>
-      </div>
+
+      <ImageText
+          image={imageAcabamentos}
+          title={""}
+          summary={
+            "O nível dos acabamentos acompanha a qualidade de construção através da adoção de soluções construtivas de eficácia comprovada e da seleção de materiais de marcas conceituadas e de qualidade altíssima. Começando na fachada e na caixilharia, passando pelas bancadas e carpintarias, até aos equipamentos e eletrodomésticos, a escolha é coerente e a sua qualidade transversal."
+          }
+          direction="noButtonLeft"
+          bgcolor="#f6f4f1"
+          separatorlink="/acabamentos"
+        ></ImageText>
+          <ImageText
+          image={imageDetalhes}
+          title={""}
+          summary={
+            "A paisagem e a luz natural invadem cada apartamento, onde as varandas contribuem para criar um ambiente acolhedor, relaxante e confortável que o fazem sentir em comunhão com a natureza que o rodeia. Os vastos jardins e as vista soobre a cidade podem ser explorados em todas as habitações. Os apartamentos possuem divisões generosas e os seus acabamentos contemporâneos combinam na perfeição com o contacto com o ar-livre. "
+          }
+          direction="noButtonRight"
+          bgcolor="#f6f4f1"
+          separatorlink="/acabamentos"
+        ></ImageText>
+        <h6 className="descubramais">
+        Conheça alguns dos principais atributos que pode encontrar nos edifícios Spring Garden Residences:
+        </h6>
 
         <div style = {{display: "flex", flexWrap: "wrap", justifyContent: "center"}}> 
           <div className="square">
