@@ -18,6 +18,12 @@ import Menu from "@material-ui/icons/Menu";
 import styles from "assets/jss/material-kit-react/components/headerStyle.js";
 import nav_logo from "../../img/logo-removebg.png";
 
+import backgroundHome from "../../img/exemploImgParalax.jpg";
+import backgroundTipologias from "../../img/tipologiasParalax.jpg";
+import backgroundLocalizacao from "../../img/portoParalax.jpg";
+import backgroundAcabamentos from "../../img/acabamentosParalax.jpg";
+import backgroundContactos from "../../img/contatosParalax.jpeg";
+
 const useStyles = makeStyles(styles);
 
 export default function Header(props) {
@@ -59,6 +65,32 @@ export default function Header(props) {
       document.body
         .getElementsByTagName("header")[0]
         .classList.add(classes.displayNone);
+    }
+    if (windowsScrollTop < 2300) {
+      document.documentElement.style.setProperty(
+        "--background-image-url",
+        `url(${backgroundHome})`
+      );
+    } else if (windowsScrollTop > 2300 && windowsScrollTop < 3800) {
+      document.documentElement.style.setProperty(
+        "--background-image-url",
+        `url(${backgroundTipologias})`
+      );
+    } else if (windowsScrollTop > 3800 && windowsScrollTop < 6000) {
+      document.documentElement.style.setProperty(
+        "--background-image-url",
+        `url(${backgroundLocalizacao})`
+      );
+    } else if (windowsScrollTop > 6000 && windowsScrollTop < 9500) {
+      document.documentElement.style.setProperty(
+        "--background-image-url",
+        `url(${backgroundAcabamentos})`
+      );
+    } else if (windowsScrollTop > 9500) {
+      document.documentElement.style.setProperty(
+        "--background-image-url",
+        `url(${backgroundContactos})`
+      );
     }
   };
   const { color, rightLinks, leftLinks, brand, fixed, absolute } = props;
