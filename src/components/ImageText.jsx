@@ -30,17 +30,16 @@ const ImageText = props => {
                 <button>Descubra mais!</button>
               </Link>
             </div>
-            <div className="col-12 col-md-6">
-              <div className="imageHover">
-                <figure><img
-                  src={image}
-                  alt="image"
-                  className="w-100"
-                  style={{
-                    clipPath:
-                      "circle(50% at 50% 50%)"
-                  }}
-                ></img></figure></div>
+            <div className="col-12 col-md-6 imageHover">
+              <figure><img
+                src={image}
+                alt="image"
+                className="w-100"
+                style={{
+                  clipPath:
+                    "circle(50% at 50% 50%)"
+                }}
+              ></img></figure>
             </div>
           </>
         )
