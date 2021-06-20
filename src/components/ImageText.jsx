@@ -1,10 +1,10 @@
-import React from "react";
-import Button from "components/CustomButtons/Button.js";
-import { Link } from "react-router-dom";
+import React from "react"
+import Button from "components/CustomButtons/Button.js"
+import { Link } from "react-router-dom"
 
-import folha from "../img/folha-removebg.png";
-import folha2 from "../img/folha2-removebg.png";
-import folha3 from "../img/folha3-removebg.png";
+import folha from "../img/folha-removebg.png"
+import folha2 from "../img/folha2-removebg.png"
+import folha3 from "../img/folha3-removebg.png"
 
 const ImageText = props => {
   const {
@@ -16,7 +16,7 @@ const ImageText = props => {
     summary,
     bgcolor,
     separatorlink
-  } = props;
+  } = props
 
   const getDisplayOrder = () => {
     switch (direction) {
@@ -30,20 +30,21 @@ const ImageText = props => {
                 <button>Descubra mais!</button>
               </Link>
             </div>
-            <div class="col-12 col-md-6 ">
-              <img
-                src={image}
-                alt="image"
-                className="w-100"
-                style={{
-                  clipPath:
-                    "circle(50% at 50% 50%)"
-                }}
-              ></img>
+            <div className="col-12 col-md-6">
+              <div className="imageHover">
+                <figure><img
+                  src={image}
+                  alt="image"
+                  className="w-100"
+                  style={{
+                    clipPath:
+                      "circle(50% at 50% 50%)"
+                  }}
+                ></img></figure></div>
             </div>
           </>
-        );
-        break;
+        )
+        break
       case "left":
         return (
           <>
@@ -68,8 +69,8 @@ const ImageText = props => {
               </Link>
             </div>
           </>
-        );
-        break;
+        )
+        break
       case "top":
         return (
           <>
@@ -79,29 +80,29 @@ const ImageText = props => {
               <Link className={"nav-buton"} to={separatorlink}>
                 <button>Descubra mais!</button>
               </Link>
-              <img 
-                src={image} 
-                alt="image" 
+              <img
+                src={image}
+                alt="image"
                 className="w-100"
                 style={{
                   clipPath: "circle(50% at 50% 50%)"
                 }}>
-                </img>
+              </img>
             </div>
           </>
-        );
-        break;
+        )
+        break
       case "noButtonLeft":
         return (
           <>
             <div class="col-12 col-md-6">
-              <img 
-                 src={image} 
-                 alt="image" 
-                 className="w-100"
-                 style={{
-                 clipPath: "circle(50% at 50% 50%)"
-                 }}>
+              <img
+                src={image}
+                alt="image"
+                className="w-100"
+                style={{
+                  clipPath: "circle(50% at 50% 50%)"
+                }}>
               </img>
             </div>
             <div class="p-3 col-12 col-md-6 d-flex flex-column justify-content-center align-items-center">
@@ -109,8 +110,8 @@ const ImageText = props => {
               <p className="summaryText">{summary}</p>
             </div>
           </>
-        );
-        break;
+        )
+        break
       case "noButtonRight":
         return (
           <>
@@ -119,18 +120,18 @@ const ImageText = props => {
               <p className="summaryText">{summary}</p>
             </div>
             <div class="col-12 col-md-6 ">
-              <img 
-                 src={image} 
-                 alt="image" 
-                  className="w-100"
-                 style={{
-                    clipPath: "circle(50% at 50% 50%)"
-                 }}>
+              <img
+                src={image}
+                alt="image"
+                className="w-100"
+                style={{
+                  clipPath: "circle(50% at 50% 50%)"
+                }}>
               </img>
             </div>
           </>
-        );
-        break;
+        )
+        break
       case "imagelong":
         return (
           <>
@@ -138,8 +139,8 @@ const ImageText = props => {
               <img src={image} alt="image" className="w-100"></img>
             </div>
           </>
-        );
-        break;
+        )
+        break
 
       default:
         return (
@@ -153,10 +154,10 @@ const ImageText = props => {
               <img src={image} alt="image" className="w-100"></img>
             </div>
           </>
-        );
-        break;
+        )
+        break
     }
-  };
+  }
 
   return (
     <div
@@ -165,7 +166,7 @@ const ImageText = props => {
     >
       {getDisplayOrder()}
     </div>
-  );
-};
+  )
+}
 
-export default ImageText;
+export default ImageText
