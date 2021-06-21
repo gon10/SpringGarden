@@ -47,15 +47,15 @@ const ImageText = props => {
       case "left":
         return (
           <>
-            <div class="col-12 col-md-6 position-relative">
-              <img
+            <div class="col-12 col-md-6 position-relative imageHover">
+              <figure><img
                 src={image}
                 alt="image"
                 className="w-100"
                 style={{
                   clipPath: "circle(50% at 50% 50%)"
                 }}
-              ></img>
+              ></img></figure>
               <img className="leaf1" src={folha} alt="leaf"></img>
               <img className="leaf2" src={folha2} alt="leaf"></img>
               <img className="leaf3" src={folha3} alt="leaf"></img>
