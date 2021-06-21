@@ -646,14 +646,26 @@ button:hover {
   font-size: 20px;
 }
 
-.textCenter {
+.textRight {
   font-family: 'Noto Sans SC', sans-serif;
   color: #848482;
-  text-align: center;
   margin-left: 50px;
+  margin-right: 15px;
+  font-size: 20px;
+  padding-bottom: 20px;  
+  line-height: 30px;
+  text-align: justify;
+}
+
+.textLeft {
+  font-family: 'Noto Sans SC', sans-serif;
+  color: #848482;
+  margin-left: 15px;
   margin-right: 50px;
   font-size: 20px;
-  padding-bottom: 20px;
+  padding-bottom: 20px;  
+  line-height: 30px;
+  text-align: justify;
 }
 /***Carousel css text***********************************************************************/
 
