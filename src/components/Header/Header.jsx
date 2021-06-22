@@ -1,107 +1,107 @@
-import React from "react";
+import React from "react"
 // nodejs library that concatenates classes
-import classNames from "classnames";
+import classNames from "classnames"
 // nodejs library to set properties for components
-import PropTypes from "prop-types";
+import PropTypes from "prop-types"
 // @material-ui/core components
-import { makeStyles } from "@material-ui/core/styles";
-import AppBar from "@material-ui/core/AppBar";
-import Toolbar from "@material-ui/core/Toolbar";
-import IconButton from "@material-ui/core/IconButton";
-import Button from "@material-ui/core/Button";
-import Hidden from "@material-ui/core/Hidden";
-import Drawer from "@material-ui/core/Drawer";
+import { makeStyles } from "@material-ui/core/styles"
+import AppBar from "@material-ui/core/AppBar"
+import Toolbar from "@material-ui/core/Toolbar"
+import IconButton from "@material-ui/core/IconButton"
+import Button from "@material-ui/core/Button"
+import Hidden from "@material-ui/core/Hidden"
+import Drawer from "@material-ui/core/Drawer"
 // @material-ui/icons
-import Menu from "@material-ui/icons/Menu";
+import Menu from "@material-ui/icons/Menu"
 // core components
 // import styles from "assets/jss/material-kit-react/components/headerStyle.js";
-import styles from "assets/jss/material-kit-react/components/headerStyle.js";
-import nav_logo from "../../img/logo-removebg.png";
+import styles from "assets/jss/material-kit-react/components/headerStyle.js"
+import nav_logo from "../../img/logo-removebg.png"
 
-import backgroundHome from "../../img/exemploImgParalax.jpg";
-import backgroundTipologias from "../../img/tipologiasParalax.jpg";
-import backgroundLocalizacao from "../../img/portoParalax.jpg";
-import backgroundAcabamentos from "../../img/acabamentosParalax.jpg";
-import backgroundContactos from "../../img/contatosParalax.jpeg";
+import backgroundHome from "../../img/exemploImgParalax.jpg"
+import backgroundTipologias from "../../img/tipologiasParalax.jpg"
+import backgroundLocalizacao from "../../img/portoParalax.jpg"
+import backgroundAcabamentos from "../../img/acabamentosParalax.jpg"
+import backgroundContactos from "../../img/folhas.jpg"
 
-const useStyles = makeStyles(styles);
+const useStyles = makeStyles(styles)
 
 export default function Header(props) {
-  const classes = useStyles();
-  const [mobileOpen, setMobileOpen] = React.useState(false);
+  const classes = useStyles()
+  const [mobileOpen, setMobileOpen] = React.useState(false)
   React.useEffect(() => {
     if (props.changeColorOnScroll) {
-      window.addEventListener("scroll", headerColorChange);
+      window.addEventListener("scroll", headerColorChange)
     }
     return function cleanup() {
       if (props.changeColorOnScroll) {
-        window.removeEventListener("scroll", headerColorChange);
+        window.removeEventListener("scroll", headerColorChange)
       }
-    };
-  });
+    }
+  })
   const handleDrawerToggle = () => {
-    setMobileOpen(!mobileOpen);
-  };
+    setMobileOpen(!mobileOpen)
+  }
   const headerColorChange = () => {
-    const { color, changeColorOnScroll } = props;
-    const windowsScrollTop = window.pageYOffset;
+    const { color, changeColorOnScroll } = props
+    const windowsScrollTop = window.pageYOffset
     if (windowsScrollTop > changeColorOnScroll.height) {
       document.body
         .getElementsByTagName("header")[0]
-        .classList.remove(classes[color]);
+        .classList.remove(classes[color])
       document.body
         .getElementsByTagName("header")[0]
-        .classList.add(classes[changeColorOnScroll.color]);
+        .classList.add(classes[changeColorOnScroll.color])
       document.body
         .getElementsByTagName("header")[0]
-        .classList.remove(classes.displayNone);
+        .classList.remove(classes.displayNone)
     } else {
       document.body
         .getElementsByTagName("header")[0]
-        .classList.add(classes[color]);
+        .classList.add(classes[color])
       document.body
         .getElementsByTagName("header")[0]
-        .classList.remove(classes[changeColorOnScroll.color]);
+        .classList.remove(classes[changeColorOnScroll.color])
       document.body
         .getElementsByTagName("header")[0]
-        .classList.add(classes.displayNone);
+        .classList.add(classes.displayNone)
     }
     if (windowsScrollTop < 2300) {
       document.documentElement.style.setProperty(
         "--background-image-url",
         `url(${backgroundHome})`
-      );
+      )
     } else if (windowsScrollTop > 2300 && windowsScrollTop < 3800) {
       document.documentElement.style.setProperty(
         "--background-image-url",
         `url(${backgroundTipologias})`
-      );
+      )
     } else if (windowsScrollTop > 3800 && windowsScrollTop < 6000) {
       document.documentElement.style.setProperty(
         "--background-image-url",
         `url(${backgroundLocalizacao})`
-      );
-    } else if (windowsScrollTop > 6000 && windowsScrollTop < 9500) {
+      )
+    } else if (windowsScrollTop > 6000 && windowsScrollTop < 9100) {
       document.documentElement.style.setProperty(
         "--background-image-url",
         `url(${backgroundAcabamentos})`
-      );
-    } else if (windowsScrollTop > 9500) {
+      )
+    } else if (windowsScrollTop > 9100) {
       document.documentElement.style.setProperty(
         "--background-image-url",
         `url(${backgroundContactos})`
-      );
+      )
     }
-  };
-  const { color, rightLinks, leftLinks, brand, fixed, absolute } = props;
+  }
+  const { color, rightLinks, leftLinks, brand, fixed, absolute } = props
   const appBarClasses = classNames({
     [classes.appBar]: true,
     [classes[color]]: color,
     [classes.absolute]: absolute,
     [classes.fixed]: fixed,
     [classes.displayNone]: true
-  });
-  const brandComponent = <Button className={classes.title}>{brand}</Button>;
+  })
+  const brandComponent = <Button className={classes.title}>{brand}</Button>
   return (
     <AppBar className={`${appBarClasses}`}>
       <Toolbar className={classes.container}>
@@ -120,7 +120,7 @@ export default function Header(props) {
                   window.scrollTo({
                     top: 0,
                     behavior: "smooth"
-                  });
+                  })
                 }}
               >
                 <img className="nav-logo" src={nav_logo} alt="logo"></img>
@@ -158,12 +158,12 @@ export default function Header(props) {
         </Drawer>
       </Hidden>
     </AppBar>
-  );
+  )
 }
 
 Header.defaultProp = {
   color: "white"
-};
+}
 
 Header.propTypes = {
   color: PropTypes.oneOf([
@@ -202,4 +202,4 @@ Header.propTypes = {
       "dark"
     ]).isRequired
   })
-};
+}

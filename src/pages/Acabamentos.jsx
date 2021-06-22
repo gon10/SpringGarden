@@ -45,6 +45,8 @@ const Acabamentos = React.forwardRef((props, ref) => {
           <span>Cozinhas</span>
         </div>
       </div>
+
+
       <div className="row">
         <div className="col-12 col-md-6 justify-content-center">
           <h3 className="textRight">O nível dos acabamentos acompanha a qualidade de construção através da adoção de soluções construtivas de eficácia comprovada e da seleção de materiais de marcas conceituadas e de qualidade altíssima. Começando na fachada e na caixilharia, passando pelas bancadas e carpintarias, até aos equipamentos e eletrodomésticos, a escolha é coerente e a sua qualidade transversal. A paisagem e a luz natural invadem cada apartamento, onde as varandas contribuem para criar um ambiente acolhedor, relaxante e confortável que o fazem sentir em comunhão com a natureza que o rodeia. Os vastos jardins e as vista soobre a cidade podem ser explorados em todas as habitações. Os apartamentos possuem acabamentos combinam na perfeição com o contacto com o ar-livre.</h3>

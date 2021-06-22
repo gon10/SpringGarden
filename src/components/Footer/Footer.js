@@ -1,34 +1,34 @@
 /*eslint-disable*/
-import React from "react";
+import React from "react"
 // nodejs library to set properties for components
-import PropTypes from "prop-types";
+import PropTypes from "prop-types"
 // nodejs library that concatenates classes
-import classNames from "classnames";
+import classNames from "classnames"
 // material-ui core components
-import { List, ListItem } from "@material-ui/core";
-import { makeStyles } from "@material-ui/core/styles";
-import "./Footer.css";
+import { List, ListItem } from "@material-ui/core"
+import { makeStyles } from "@material-ui/core/styles"
+import "./Footer.css"
 
 // @material-ui/icons
-import Favorite from "@material-ui/icons/Favorite";
+import Favorite from "@material-ui/icons/Favorite"
 
-import styles from "assets/jss/material-kit-react/components/footerStyle.js";
-import nav_logo from "../../img/logo-removebg.png";
-import SectionPills from "./SectionPills";
+import styles from "assets/jss/material-kit-react/components/footerStyle.js"
+import nav_logo from "../../img/logo-removebg.png"
+import SectionPills from "./SectionPills"
 
-const useStyles = makeStyles(styles);
+const useStyles = makeStyles(styles)
 
 export default function Footer(props) {
-  const classes = useStyles();
-  const { whiteFont } = props;
+  const classes = useStyles()
+  const { whiteFont } = props
   const footerClasses = classNames({
     [classes.footer]: true,
     [classes.footerWhiteFont]: whiteFont
-  });
+  })
   const aClasses = classNames({
     [classes.a]: true,
     [classes.footerWhiteFont]: whiteFont
-  });
+  })
   return (
     <>
       {/* <footer class="footer">
@@ -195,14 +195,14 @@ export default function Footer(props) {
         <div className={classes.container}>
           <div className="row">
             <a className="home-style navbar-brand">
-            <br />
-          
+              <br />
+
               <img
                 onClick={() => {
                   window.scrollTo({
                     top: 0,
                     behavior: "smooth"
-                  });
+                  })
                 }}
                 className="footer-logo"
                 src={nav_logo}
@@ -210,8 +210,7 @@ export default function Footer(props) {
               ></img>
             </a>
           </div>
-          <div className="row">
-            {/* <SectionPills /> */}
+          {/* <div className="row">
             <div className="info col-12 col-md-4 d-flex flex-column justify-content-center align-items-center">
               <h3>Localização</h3>
               <p>R. Dom Afonso Henriques 827 Pedrouços, Maia</p>
@@ -224,7 +223,7 @@ export default function Footer(props) {
               <h3>Contactos</h3>
               <p>+351 919429518 +351 913050087</p>
             </div>
-          </div>
+          </div> */}
 
           <div className="row">
             <div className="d-flex justify-content-center align-items-center">
@@ -234,9 +233,9 @@ export default function Footer(props) {
         </div>
       </footer>
     </>
-  );
+  )
 }
 
 Footer.propTypes = {
   whiteFont: PropTypes.bool
-};
+}
