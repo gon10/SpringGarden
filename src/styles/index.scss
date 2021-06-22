@@ -1,7 +1,7 @@
-@import '~bootstrap/scss/bootstrap.scss';
-@import url('https://fonts.googleapis.com/css?family=Lato:300,400,700');
-@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Nanum+Gothic&family=Noto+Sans+SC:wght@300&family=Quicksand:wght@300;400&display=swap');
+@import "~bootstrap/scss/bootstrap.scss";
+@import url("https://fonts.googleapis.com/css?family=Lato:300,400,700");
+@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Nanum+Gothic&family=Noto+Sans+SC:wght@300&family=Quicksand:wght@300;400&display=swap");
 
 /*****************STARTS TOP BACKGROUND SECTION***************/
 #stars {
@@ -186,7 +186,7 @@
     69px 1852px #fff, 878px 300px #fff, 730px 726px #fff, 1137px 68px #fff;
   animation: animStar 50s linear infinite;
   &:after {
-    content: ' ';
+    content: " ";
     position: relative;
     top: 2000px;
     width: 1px;
@@ -444,7 +444,7 @@
     782px 598px #fff, 1709px 1377px #fff, 717px 1040px #fff;
   animation: animStar 100s linear infinite;
   &:after {
-    content: ' ';
+    content: " ";
     position: relative;
     top: 2000px;
     width: 2px;
@@ -539,7 +539,7 @@
     1747px 1800px #fff;
   animation: animStar 150s linear infinite;
   &:after {
-    content: '';
+    content: "";
     position: relative;
     top: 2000px;
     width: 3px;
@@ -606,7 +606,7 @@
 
 .h3 {
   color: #fff;
-  font-family: 'Noto Sans SC', sans-serif;
+  font-family: "Noto Sans SC", sans-serif;
 }
 /*****Botao descubra mais!**************************************************************************/
 button {
@@ -614,7 +614,7 @@ button {
 
   color: #1d1d1d;
   border: 2px solid #1d1d1d;
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
 
   text-align: center;
   line-height: 1;
@@ -629,16 +629,15 @@ button:hover {
   background-color: #c7ab62;
 }
 
-
 /*********************************************************************************/
 .titleText {
-  font-family: 'Quicksand', sans-serif;
+  font-family: "Quicksand", sans-serif;
   color: #1d1d1d;
   padding-bottom: 15px;
 }
 
 .summaryText {
-  font-family: 'Noto Sans SC', sans-serif;
+  font-family: "Noto Sans SC", sans-serif;
   color: #848482;
   text-align: justify;
   margin-left: 20px;
@@ -647,41 +646,41 @@ button:hover {
 }
 
 .textRight {
-  font-family: 'Noto Sans SC', sans-serif;
+  font-family: "Noto Sans SC", sans-serif;
   color: #848482;
   margin-left: 50px;
   margin-right: 15px;
   font-size: 20px;
-  padding-bottom: 20px;  
+  padding-bottom: 20px;
   line-height: 30px;
   text-align: justify;
 }
 
 .textLeft {
-  font-family: 'Noto Sans SC', sans-serif;
+  font-family: "Noto Sans SC", sans-serif;
   color: #848482;
   margin-left: 15px;
   margin-right: 50px;
   font-size: 20px;
-  padding-bottom: 20px;  
+  padding-bottom: 20px;
   line-height: 30px;
   text-align: justify;
 }
 /***Carousel css text***********************************************************************/
 
 .springardenlogo {
-  font-family: 'Quicksand', sans-serif;
+  font-family: "Quicksand", sans-serif;
   color: #c7ab62;
 }
 
 .springardenIntro {
-  font-family: 'Noto Sans SC', sans-serif;
+  font-family: "Noto Sans SC", sans-serif;
   color: #848482;
   text-align: justify;
 }
 .descubramais {
   //font-family: 'Quicksand', sans-serif;
-  font-family: 'Neue World', sans-serif;
+  font-family: "Neue World", sans-serif;
   padding-bottom: 20px;
   color: #c7ab62;
   font-size: 20px;
@@ -692,7 +691,7 @@ button:hover {
 }
 
 .descubramais:after {
-  content: ' ';
+  content: " ";
   display: block;
   width: clamp(1.5rem, 200px, 30rem);
   height: 2px;
@@ -972,7 +971,7 @@ footer h3 {
 }
 
 .testbg {
-  background-image: url('../img/Vmarine.jpg');
+  background-image: url("../img/Vmarine.jpg");
   height: 400px;
   background-position: center;
   background-repeat: no-repeat;
@@ -980,14 +979,14 @@ footer h3 {
 }
 
 .aguabg {
-  background-image: url('../img/aguaDeLuz.png');
+  background-image: url("../img/aguaDeLuz.png");
   height: 400px;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
 }
 .todobg {
-  background-image: url('../img/todolist.png');
+  background-image: url("../img/todolist.png");
   height: 400px;
   background-position: center;
   background-repeat: no-repeat;
@@ -1242,7 +1241,7 @@ footer h3 {
 
 .square p {
   color: #000000;
-  font-family: 'Montserrat', Sans-serif;
+  font-family: "Montserrat", Sans-serif;
   font-size: 18px;
   font-weight: 500;
   line-height: 1.3em;
@@ -1256,25 +1255,23 @@ footer h3 {
   margin-bottom: 20px;
 }
 
-
 //zoom nas imagens
 
 figure {
-	margin: 0;
-	padding: 0;
-	overflow: hidden;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
 }
 .imageHover figure img {
-	-webkit-transform: scale(1);
-	transform: scale(1);
-	-webkit-transition: .3s ease-in-out;
-	transition: .3s ease-in-out;
+  -webkit-transform: scale(1);
+  transform: scale(1);
+  -webkit-transition: 0.3s ease-in-out;
+  transition: 0.3s ease-in-out;
 }
 .imageHover figure:hover img {
-	-webkit-transform: scale(1.1);
-	transform: scale(1.1);
+  -webkit-transform: scale(1.1);
+  transform: scale(1.1);
 }
-
 
 //efeitos nas imagens acabamentos
 
@@ -1289,17 +1286,17 @@ figure {
 .boxImagesDetails {
   flex: 1;
   overflow: hidden;
-  transition: .5s;
+  transition: 0.5s;
   margin: 0 2%;
-  box-shadow: 0 20px 30px rgba(0,0,0,.1);
+  box-shadow: 0 20px 30px rgba(0, 0, 0, 0.1);
   line-height: 0;
 }
 
 .boxImagesDetails > img {
   width: 200%;
   height: calc(100% - 5vh);
-  object-fit: cover; 
-  transition: .8s;
+  object-fit: cover;
+  transition: 0.8s;
 }
 
 .boxImagesDetails > span {
@@ -1310,8 +1307,28 @@ figure {
   line-height: 2.6;
 }
 
-.boxImagesDetails:hover { flex: 1 1 50%; }
+.boxImagesDetails:hover {
+  flex: 1 1 50%;
+}
 .boxImagesDetails:hover > img {
   width: 100%;
   height: 100%;
+}
+
+//efeito de escrever na imagem de fundo
+.txt-type > .txt {
+  border-right: 0.2rem solid #fff;
+  animation: hide-cursor 1.5s infinite;
+}
+
+@keyframes hide-cursor {
+  0% {
+    border-right-style: solid;
+  }
+  50% {
+    border-right-style: none;
+  }
+  100% {
+    border-right-style: solid;
+  }
 }
