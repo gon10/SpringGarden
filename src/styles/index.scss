@@ -1461,15 +1461,14 @@ figure {
 			display: flex;
 			justify-content: center;
 			align-items: center;
-			ion-icon {
-				color: white;
+			color: #f6f4f1;
 			}
-		}
 
 		.info--text {
 			display: block;
 			position: absolute;
-			left: 10%;
+			width: 100%;
+      text-align: center;
 			bottom: 5%;
 			font-size: 0.85rem;
 			letter-spacing: 2px;

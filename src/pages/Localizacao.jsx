@@ -11,6 +11,8 @@ import imageJardBot from "../img/jardimBot.PNG"
 import imageCasaMusica from "../img/casamusica.jpg"
 import imagePalacio from "../img/palacio.jpg"
 import imageFundSerralves from "../img/fundSerralves.jpg"
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faPlus } from '@fortawesome/free-solid-svg-icons'
 
 
 const useStyles = makeStyles(styles)
@@ -57,7 +59,7 @@ const Localizacao = React.forwardRef((props, ref) => {
       ></ImageText>
 
       <h6 className="descubramais">
-        Um distrito onde a arquitetura, a música e a arte estão em cada esquina!
+        Uma cidade onde a arquitetura, a música e a arte estão em cada esquina!
       </h6>
 
       {/*<ImageText
@@ -95,7 +97,7 @@ const Localizacao = React.forwardRef((props, ref) => {
           <div className="card--info info--1">
             <span className="info--text">Fundação Serralves</span>
             <div className="icon">
-              <ion-icon name="add-outline"></ion-icon>
+              <FontAwesomeIcon icon={faPlus} />
             </div>
             <div className="info--image">
               <img src={imageFundSerralves} alt="" />
@@ -104,7 +106,7 @@ const Localizacao = React.forwardRef((props, ref) => {
           <div className="card--info info--2">
             <span className="info--text">Palácio de Cristal</span>
             <div className="icon">
-              <ion-icon name="add-outline"></ion-icon>
+              <FontAwesomeIcon icon={faPlus} />
             </div>
             <div className="info--image">
               <img src={imagePalacio} alt="" />
@@ -113,7 +115,7 @@ const Localizacao = React.forwardRef((props, ref) => {
           <div className="card--info info--3">
             <span className="info--text">Casa da Música</span>
             <div className="icon">
-              <ion-icon name="add-outline"></ion-icon>
+              <FontAwesomeIcon icon={faPlus} />
             </div>
             <div className="info--image">
               <img src={imageCasaMusica} alt="" />
@@ -122,7 +124,7 @@ const Localizacao = React.forwardRef((props, ref) => {
           <div className="card--info info--4">
             <span className="info--text">Jardim Botânico</span>
             <div className="icon">
-              <ion-icon name="add-outline"></ion-icon>
+              <FontAwesomeIcon icon={faPlus} />
             </div>
             <div className="info--image">
               <img src={imageJardBot} alt="" />

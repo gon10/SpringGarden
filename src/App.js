@@ -80,12 +80,12 @@ function App(props) {
                     harmonia com a Natureza
                   </h1> */}
                   <h1 className={(classes.title, "textParalax")}>
-                    harmonia com a{" "}
-                    <span
+                    harmonia com a{" Natureza"}
+                    {/* <span
                       class="txt-type-home"
                       data-wait="2000"
                       data-words='["Natureza", "Pila", "Cona"]'
-                    ></span>
+                    ></span> */}
                   </h1>
                   <h3 className={classes.subtitle}>Spring Garden Residences</h3>
                 </div>
@@ -104,12 +104,12 @@ function App(props) {
                 <div className={classes.brand}>
                   <h1 className={(classes.title, "textParalax")}>Encontre</h1>
                   <h1 className={(classes.title, "textParalax")}>
-                    o seu conforto e{" "}
-                    <span
+                    o seu conforto e{" harmonia"}
+                    {/* <span
                       class="txt-type-tipologias"
                       data-wait="2000"
                       data-words='["harmonia", "paz do senhor" ]'
-                    ></span>
+                    ></span> */}
                   </h1>
                 </div>
               </GridItem>
@@ -127,12 +127,12 @@ function App(props) {
                 <div className={classes.brand}>
                   <h1 className={(classes.title, "textParalax")}>Porto,</h1>
                   <h1 className={(classes.title, "textParalax")}>
-                    uma localizaçao{" "}
-                    <span
+                    uma localizaçao{" privilegiada"}
+                    {/* <span
                       class="txt-type-localizacao"
                       data-wait="2000"
                       data-words='["privilegiada", "do caralho"]'
-                    ></span>
+                    ></span> */}
                   </h1>
                 </div>
               </GridItem>
@@ -150,12 +150,12 @@ function App(props) {
                 <div className={classes.brand}>
                   <h1 className={(classes.title, "textParalax")}>Design</h1>
                   <h1 className={(classes.title, "textParalax")}>
-                    e acabamentos de{" "}
-                    <span
+                    e acabamentos de{" excelência"}
+                    {/* <span
                       class="txt-type-acabamentos"
                       data-wait="2000"
                       data-words='["luxo", "excelencia"]'
-                    ></span>
+                    ></span> */}
                   </h1>
                 </div>
               </GridItem>
