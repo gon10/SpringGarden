@@ -1347,7 +1347,7 @@ figure {
   }
 }
 
-//image map
+//localization map with porto places
 
 .card {
 	position: relative;
@@ -1471,8 +1471,8 @@ figure {
 			position: absolute;
 			left: 10%;
 			bottom: 5%;
-			font-size: 0.55rem;
-			letter-spacing: 1px;
+			font-size: 0.85rem;
+			letter-spacing: 2px;
 			font-family: "Noto Sans SC", sans-serif;
 		//	font-weight: bold;
 			color: #f6f4f1;
@@ -1506,15 +1506,15 @@ figure {
 				opacity: 1;
 			}
 			&.info--1 {
-				right: 71%;
+				right: 70%;
 				transition-delay: 100ms;
 			}
 			&.info--2 {
-				right: -10%;
+				right: 10%;
 			}
 
-      &.info--4 {
-				right: -30%;
+      &.info--3 {
+				right: 20%;
 			}
 
       &.info--4 {
@@ -1534,21 +1534,4 @@ figure {
 	}
 }
 
-.support{
-	position: absolute;
-	right: 10px;
-	bottom: 10px;
-	padding: 10px;
-	display: flex;
-	a{
-		margin: 0 10px;
-		color: #fff;
-		font-size: 1.8rem;
-		backface-visibility: hidden;
-		transition: all 150ms ease;
-		&:hover{
-			transform: scale(1.1);
-		}
-	}
 
-}

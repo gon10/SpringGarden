@@ -60,15 +60,14 @@ const Localizacao = React.forwardRef((props, ref) => {
         Um distrito onde a arquitetura, a música e a arte estão em cada esquina!
       </h6>
 
-      <ImageText
+      {/*<ImageText
         image={imageMapa}
         summary={""}
         direction="top"
         bgcolor="#rgb(86 158 8 / 8%)"
       ></ImageText>
 
-
-      {/* <div className="containerImagesDetails">
+       <div className="containerImagesDetails">
         <div className="boxImagesDetails">
           <img src={imageJardBot} alt="" />
           <span>Jardim Botânico</span>
