@@ -14,6 +14,8 @@ const ImageText = props => {
     direction,
     title,
     summary,
+    summary2,
+    summary3,
     bgcolor,
     separatorlink
   } = props
@@ -35,10 +37,10 @@ const ImageText = props => {
                 src={image}
                 alt="image"
                 className="w-100"
-                style={{
-                  clipPath:
-                    "circle(50% at 50% 50%)"
-                }}
+              // style={{
+              //   clipPath:
+              //     "circle(50% at 50% 50%)"
+              // }}
               ></img></figure>
             </div>
           </>
@@ -52,9 +54,9 @@ const ImageText = props => {
                 src={image}
                 alt="image"
                 className="w-100"
-                style={{
-                  clipPath: "circle(50% at 50% 50%)"
-                }}
+              // style={{
+              //   clipPath: "circle(50% at 50% 50%)"
+              // }}
               ></img></figure>
               <img className="leaf1" src={folha} alt="leaf"></img>
               <img className="leaf2" src={folha2} alt="leaf"></img>
@@ -73,20 +75,21 @@ const ImageText = props => {
       case "top":
         return (
           <>
-            <div class="p-3 col-12 col-md-12 d-flex flex-column justify-content-center align-items-center">
-              <h4 className="titleText">{title}</h4>
-              <p className="summaryText">{summary}</p>
-              <Link className={"nav-buton"} to={separatorlink}>
-                <button>Descubra mais!</button>
-              </Link>
+            <div className="p-3 col-12 col-md-12 d-flex flex-column justify-content-center align-items-center">
               <img
                 src={image}
                 alt="image"
-                className="w-100"
-                style={{
-                  clipPath: "circle(50% at 50% 50%)"
-                }}>
+                className="w-70"
+              // style={{
+              //   clipPath: "circle(50% at 50% 50%)"
+              // }}
+              >
               </img>
+              <h4 className="titleText">{title}</h4>
+              <p className="summaryText">{summary}</p>
+              {/* <Link className={"nav-buton"} to={separatorlink}>
+                <button>Descubra mais!</button>
+              </Link> */}
             </div>
           </>
         )
@@ -94,19 +97,41 @@ const ImageText = props => {
       case "noButtonLeft":
         return (
           <>
-            <div class="col-12 col-md-6">
-              <img
+            <div class="col-12 col-md-6 imageHover">
+              <figure><img
                 src={image}
                 alt="image"
                 className="w-100"
-                style={{
-                  clipPath: "circle(50% at 50% 50%)"
-                }}>
-              </img>
+              // style={{
+              //   clipPath: "circle(50% at 50% 50%)"
+              // }}
+              ></img></figure>
             </div>
             <div class="p-3 col-12 col-md-6 d-flex flex-column justify-content-center align-items-center">
               <h4 className="titleText">{title}</h4>
               <p className="summaryText">{summary}</p>
+            </div>
+          </>
+        )
+        break
+      case "noButtonLeftExtraSummary":
+        return (
+          <>
+            <div className="col-12 col-md-6 imageHover">
+              <figure><img
+                src={image}
+                alt="image"
+                className="w-100"
+              // style={{
+              //   clipPath: "circle(50% at 50% 50%)"
+              // }}
+              ></img></figure>
+            </div>
+            <div class="p-3 col-12 col-md-6 d-flex flex-column justify-content-center align-items-center">
+              <h4 className="titleText">{title}</h4>
+              <p className="summaryText">{summary}</p>
+              <p className="summaryText">{summary2}</p>
+              <p className="summaryText">{summary3}</p>
             </div>
           </>
         )
@@ -118,15 +143,15 @@ const ImageText = props => {
               <h4 className="titleText">{title}</h4>
               <p className="summaryText">{summary}</p>
             </div>
-            <div class="col-12 col-md-6 ">
-              <img
+            <div class="col-12 col-md-6 imageHover">
+              <figure><img
                 src={image}
                 alt="image"
                 className="w-100"
-                style={{
-                  clipPath: "circle(50% at 50% 50%)"
-                }}>
-              </img>
+              // style={{
+              //   clipPath: "circle(50% at 50% 50%)"
+              // }}
+              ></img></figure>
             </div>
           </>
         )

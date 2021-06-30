@@ -1,4 +1,4 @@
-import React from "react"
+import React, { useEffect } from "react"
 // nodejs library that concatenates classes
 import classNames from "classnames"
 // nodejs library to set properties for components
@@ -45,6 +45,7 @@ export default function Header(props) {
   const headerColorChange = () => {
     const { color, changeColorOnScroll } = props
     const windowsScrollTop = window.pageYOffset
+    console.log("windowsScrollTop", windowsScrollTop)
     if (windowsScrollTop > changeColorOnScroll.height) {
       document.body
         .getElementsByTagName("header")[0]
@@ -66,27 +67,27 @@ export default function Header(props) {
         .getElementsByTagName("header")[0]
         .classList.add(classes.displayNone)
     }
-    if (windowsScrollTop < 2300) {
+    if (windowsScrollTop < rightLinks.props.tipologiasRef.current.offsetTop - 40) {
       document.documentElement.style.setProperty(
         "--background-image-url",
         `url(${backgroundHome})`
       )
-    } else if (windowsScrollTop > 2300 && windowsScrollTop < 3800) {
+    } else if (windowsScrollTop >= rightLinks.props.tipologiasRef.current.offsetTop - 40 && windowsScrollTop < rightLinks.props.localizacaoRef.current.offsetTop - 40) {
       document.documentElement.style.setProperty(
         "--background-image-url",
         `url(${backgroundTipologias})`
       )
-    } else if (windowsScrollTop > 3800 && windowsScrollTop < 6000) {
+    } else if (windowsScrollTop >= rightLinks.props.localizacaoRef.current.offsetTop - 40 && windowsScrollTop < rightLinks.props.acabamentosRef.current.offsetTop - 40) {
       document.documentElement.style.setProperty(
         "--background-image-url",
         `url(${backgroundLocalizacao})`
       )
-    } else if (windowsScrollTop > 6000 && windowsScrollTop < 9100) {
+    } else if (windowsScrollTop >= rightLinks.props.acabamentosRef.current.offsetTop - 40 && windowsScrollTop < rightLinks.props.contactosRef.current.offsetTop - 40) {
       document.documentElement.style.setProperty(
         "--background-image-url",
         `url(${backgroundAcabamentos})`
       )
-    } else if (windowsScrollTop > 9100) {
+    } else if (windowsScrollTop >= rightLinks.props.contactosRef.current.offsetTop - 40) {
       document.documentElement.style.setProperty(
         "--background-image-url",
         `url(${backgroundContactos})`
@@ -102,6 +103,14 @@ export default function Header(props) {
     [classes.displayNone]: true
   })
   const brandComponent = <Button className={classes.title}>{brand}</Button>
+
+  useEffect(() => {
+    // Update the document title using the browser API
+    console.log("rightLinks", rightLinks)
+
+  }, [rightLinks])
+
+
   return (
     <AppBar className={`${appBarClasses}`}>
       <Toolbar className={classes.container}>
@@ -175,7 +184,8 @@ Header.propTypes = {
     "transparent",
     "white",
     "rose",
-    "dark"
+    "dark",
+    "darkWhite"
   ]),
   rightLinks: PropTypes.node,
   leftLinks: PropTypes.node,
@@ -199,7 +209,8 @@ Header.propTypes = {
       "transparent",
       "white",
       "rose",
-      "dark"
+      "dark",
+      "darkWhite"
     ]).isRequired
   })
 }

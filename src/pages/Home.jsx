@@ -1,28 +1,28 @@
-import React from "react";
+import React from "react"
 
-import ImageText from "../components/ImageText";
-import Navbar from "../components/Navbar";
-import Test from "../components/Test";
-import image from "../img/sala-1.jpg";
-import image2 from "../img/boavista.PNG";
-import Parallax from "components/Parallax/Parallax";
-import classNames from "classnames";
-import GridContainer from "components/Grid/GridContainer";
-import GridItem from "components/Grid/GridItem";
-import { makeStyles } from "@material-ui/core/styles";
-import styles from "assets/jss/material-kit-react/views/components.js";
-import SectionCarousel from "components/Carousel/SectionCarousel";
-import { useTranslation } from "react-i18next";
-import homeImage from "../img/logo-removebg.png";
-import homeImageLeafes from "../img/6437685_preview.png";
-import { Height } from "@material-ui/icons";
+import ImageText from "../components/ImageText"
+import Navbar from "../components/Navbar"
+import Test from "../components/Test"
+import image from "../img/sala-1.jpg"
+import image2 from "../img/boavista.PNG"
+import Parallax from "components/Parallax/Parallax"
+import classNames from "classnames"
+import GridContainer from "components/Grid/GridContainer"
+import GridItem from "components/Grid/GridItem"
+import { makeStyles } from "@material-ui/core/styles"
+import styles from "assets/jss/material-kit-react/views/components.js"
+import SectionCarousel from "components/Carousel/SectionCarousel"
+import { useTranslation } from "react-i18next"
+import homeImage from "../img/logo-removebg.png"
+import homeImageLeafes from "../img/6437685_preview.png"
+import { Height } from "@material-ui/icons"
 
-const useStyles = makeStyles(styles);
+const useStyles = makeStyles(styles)
 
 const Home = React.forwardRef((props, ref) => {
-  const { t, i18n } = useTranslation();
-  const { ...rest } = props;
-  const classes = useStyles();
+  const { t, i18n } = useTranslation()
+  const { ...rest } = props
+  const classes = useStyles()
   return (
     <>
       {/* <Navbar /> */}
@@ -34,7 +34,7 @@ const Home = React.forwardRef((props, ref) => {
         {/* <SectionCarousel /> */}
         <h6 className="descubramais">Bem-vindo ao Spring Garden Residences!</h6>
 
-        <div class="p-3 col-12 d-flex flex-row justify-content-center align-items-center">
+        {/* <div class="p-3 col-12 d-flex flex-row justify-content-center align-items-center">
           <img
             src={homeImageLeafes}
             alt="image"
@@ -58,7 +58,7 @@ const Home = React.forwardRef((props, ref) => {
               transform: "rotate(270deg) scaleX(-1)"
             }}
           ></img>
-        </div>
+        </div> */}
 
         <ImageText
           image={image}
@@ -94,7 +94,7 @@ const Home = React.forwardRef((props, ref) => {
         ></ImageText>
       </div>
     </>
-  );
-});
+  )
+})
 
-export default Home;
+export default Home
