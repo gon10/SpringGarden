@@ -1451,6 +1451,28 @@ figure {
 				}
 			}
 		}
+
+    &.info--5 {
+      bottom: 5%;
+      right: 12%;
+			.info--image {
+				img {
+					right: -80%;
+					bottom: -20%;
+				}
+			}
+		}
+
+    &.info--6 {
+      bottom: 19%;
+      right: 6%;
+			.info--image {
+				img {
+					right: -80%;
+					bottom: -20%;
+				}
+			}
+		}
 		.icon {
 			position: absolute;
 			width: 100%;
@@ -1505,20 +1527,32 @@ figure {
 				opacity: 1;
 			}
 			&.info--1 {
-				right: 70%;
+				right: 80%;
 				transition-delay: 100ms;
 			}
 			&.info--2 {
-				right: 10%;
+				right: 38%;
+        transition-delay: 100ms;
 			}
 
       &.info--3 {
-				right: 20%;
+				right: 40%;
 			}
 
       &.info--4 {
 				right: 60%;
 			}
+
+      &.info--5 {
+				right: 20%;
+        transition-delay: 100ms;
+			}
+
+      &.info--6 {
+				right: 5%;
+			}
+
+
 			.info--image {
 				img {
 					opacity: 1;

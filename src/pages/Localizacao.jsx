@@ -11,6 +11,8 @@ import imageJardBot from "../img/jardimBot.PNG"
 import imageCasaMusica from "../img/casamusica.jpg"
 import imagePalacio from "../img/palacio.jpg"
 import imageFundSerralves from "../img/fundSerralves.jpg"
+import imageAliados from "../img/aliados.jpg"
+import imageClerigos from "../img/clerigos.jpg"
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faPlus } from '@fortawesome/free-solid-svg-icons'
 
@@ -128,6 +130,24 @@ const Localizacao = React.forwardRef((props, ref) => {
             </div>
             <div className="info--image">
               <img src={imageJardBot} alt="" />
+            </div>
+          </div>
+          <div className="card--info info--5">
+            <span className="info--text">Torre dos Clérigos</span>
+            <div className="icon">
+              <FontAwesomeIcon icon={faPlus} />
+            </div>
+            <div className="info--image">
+              <img src={imageClerigos} alt="" />
+            </div>
+          </div>
+          <div className="card--info info--6">
+            <span className="info--text">Avenida dos Aliados</span>
+            <div className="icon">
+              <FontAwesomeIcon icon={faPlus} />
+            </div>
+            <div className="info--image">
+              <img src={imageAliados} alt="" />
             </div>
           </div>
         </div>
