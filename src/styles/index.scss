@@ -875,22 +875,22 @@ header {
 }
 
 .leaf1 {
-  top: 2%;
-  left: 10%;
+  top: 3%;
+  left: -2%;
   width: 10%;
   transform: rotate(45deg);
   animation: leaf1 5s infinite alternate-reverse;
 }
 .leaf2 {
   top: -4%;
-  left: 20%;
+  left: 5%;
   width: 7%;
   transform: rotate(110deg);
   animation: leaf2 2s infinite alternate-reverse ease-in-out;
 }
 .leaf3 {
-  top: 40%;
-  right: 5%;
+  top: 80%;
+  right: 2%;
   width: 7%;
   transform: rotate(210deg);
   filter: drop-shadow(-22px -12px 7px rgba(0, 0, 0, 0.5));
@@ -1351,7 +1351,7 @@ figure {
 
 .card {
 	position: relative;
-	width: 70%;
+	width: 90%;
 //	height: 320px;
 	box-shadow: 0 2.8px 2.2px rgba(0, 0, 0, 0.014), 0 6.7px 5.3px rgba(0, 0, 0, 0.02),
 		0 12.5px 10px rgba(0, 0, 0, 0.025), 0 22.3px 17.9px rgba(0, 0, 0, 0.03),
@@ -1409,8 +1409,8 @@ figure {
 		}
 
 		&.info--1 {
-			bottom: 48%;
-			right: 52%;
+      bottom: 51%;
+      right: 79%;
 			.info--image {
 				img {
 					top: -80%;
@@ -1420,8 +1420,8 @@ figure {
 		}
 
 		&.info--2 {
-      bottom: 51%;
-      right: 16%;
+      bottom: 6%;
+      right: 31%;
 			.info--image {
 				img {
 					right: -20%;
@@ -1431,8 +1431,8 @@ figure {
 		}
 
 		&.info--3 {
-      bottom: 76%;
-      right: 16%;
+      bottom: 53%;
+      right: 38%;
 			.info--image {
 				img {
 					right: -20%;
@@ -1442,8 +1442,8 @@ figure {
 		}
 
     &.info--4 {
-      bottom: 23%;
-      right: 42%;
+      bottom: 30%;
+      right: 56%;
 			.info--image {
 				img {
 					right: -80%;
@@ -1500,7 +1500,7 @@ figure {
 
 	&:hover {
 		.card--info {
-			--size: 200px;
+			--size: 150px;
 			&::after {
 				opacity: 1;
 			}
