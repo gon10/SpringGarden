@@ -1,36 +1,36 @@
 /*eslint-disable*/
-import React, { useState, useEffect } from "react";
-import DeleteIcon from "@material-ui/icons/Delete";
-import IconButton from "@material-ui/core/IconButton";
+import React, { useState, useEffect } from "react"
+import DeleteIcon from "@material-ui/icons/Delete"
+import IconButton from "@material-ui/core/IconButton"
 // react components for routing our app without refresh
-import { Link } from "react-router-dom";
+import { Link } from "react-router-dom"
 
 // @material-ui/core components
-import { makeStyles } from "@material-ui/core/styles";
-import List from "@material-ui/core/List";
-import ListItem from "@material-ui/core/ListItem";
-import Tooltip from "@material-ui/core/Tooltip";
+import { makeStyles } from "@material-ui/core/styles"
+import List from "@material-ui/core/List"
+import ListItem from "@material-ui/core/ListItem"
+import Tooltip from "@material-ui/core/Tooltip"
 
 // @material-ui/icons
-import { Apps, CloudDownload } from "@material-ui/icons";
+import { Apps, CloudDownload } from "@material-ui/icons"
 
 // core components
-import CustomDropdown from "components/CustomDropdown/CustomDropdown.js";
-import Button from "components/CustomButtons/Button.js";
+import CustomDropdown from "components/CustomDropdown/CustomDropdown.js"
+import Button from "components/CustomButtons/Button.js"
 
-import styles from "assets/jss/material-kit-react/components/headerLinksStyle.js";
-import { useTranslation } from "react-i18next";
+import styles from "assets/jss/material-kit-react/components/headerLinksStyle.js"
+import { useTranslation } from "react-i18next"
 
-const useStyles = makeStyles(styles);
+const useStyles = makeStyles(styles)
 
 export default function HeaderLinks(props) {
-  const { t, i18n } = useTranslation();
-  const classes = useStyles();
-  const [btnText, setBtnText] = useState("en");
+  const { t, i18n } = useTranslation()
+  const classes = useStyles()
+  const [btnText, setBtnText] = useState("en")
 
   const changeLanguage = lng => {
-    i18n.changeLanguage(lng);
-  };
+    i18n.changeLanguage(lng)
+  }
 
   const {
     homeRef,
@@ -38,21 +38,21 @@ export default function HeaderLinks(props) {
     localizacaoRef,
     acabamentosRef,
     contactosRef
-  } = props;
+  } = props
 
   useEffect(() => {
-    setBtnText(i18n.language);
-    return () => {};
-  }, [i18n.language]);
+    setBtnText(i18n.language)
+    return () => { }
+  }, [i18n.language])
 
   const scrolling = instance => {
-    console.log("instance.current.attributes", instance);
+    console.log("instance.current.attributes", instance)
     // let node = document.getElementById(instance.current.id);
     window.scrollTo({
       top: instance.current.offsetTop,
       behavior: "smooth"
-    });
-  };
+    })
+  }
   return (
     <List className={classes.list}>
       <ListItem className={classes.listItem}>
@@ -85,7 +85,7 @@ export default function HeaderLinks(props) {
             target="_blank"
             className={classes.navLink}
             onClick={() => {
-              scrolling(homeRef);
+              scrolling(homeRef)
             }}
           >
             {t("header.home")}
@@ -99,10 +99,25 @@ export default function HeaderLinks(props) {
             target="_blank"
             className={classes.navLink}
             onClick={() => {
-              scrolling(tipologiasRef);
+              scrolling(tipologiasRef)
             }}
           >
             {t("header.apartments")}
+          </Button>
+        </Link>
+      </ListItem>
+
+      <ListItem className={classes.listItem}>
+        <Link className={"nav-buton"} to="/#acabamentos">
+          <Button
+            color="transparent"
+            target="_blank"
+            className={classes.navLink}
+            onClick={() => {
+              scrolling(acabamentosRef)
+            }}
+          >
+            {t("header.details")}
           </Button>
         </Link>
       </ListItem>
@@ -113,24 +128,10 @@ export default function HeaderLinks(props) {
             target="_blank"
             className={classes.navLink}
             onClick={() => {
-              scrolling(localizacaoRef);
+              scrolling(localizacaoRef)
             }}
           >
             {t("header.localization")}
-          </Button>
-        </Link>
-      </ListItem>
-      <ListItem className={classes.listItem}>
-        <Link className={"nav-buton"} to="/#acabamentos">
-          <Button
-            color="transparent"
-            target="_blank"
-            className={classes.navLink}
-            onClick={() => {
-              scrolling(acabamentosRef);
-            }}
-          >
-            {t("header.details")}
           </Button>
         </Link>
       </ListItem>
@@ -141,7 +142,7 @@ export default function HeaderLinks(props) {
             target="_blank"
             className={classes.navLink}
             onClick={() => {
-              scrolling(contactosRef);
+              scrolling(contactosRef)
             }}
           >
             {t("header.contacts")}
@@ -159,8 +160,8 @@ export default function HeaderLinks(props) {
           }}
           dropdownList={["EN", { divider: true }, "PT"]}
           onClick={ele => {
-            changeLanguage(ele.toLowerCase());
-            return ele;
+            changeLanguage(ele.toLowerCase())
+            return ele
           }}
         />
       </ListItem>
@@ -222,5 +223,5 @@ export default function HeaderLinks(props) {
         </Tooltip>*/}
       </ListItem>
     </List>
-  );
+  )
 }

@@ -118,29 +118,6 @@ function App(props) {
         </Parallax>
         <Tipologias />
         <Parallax
-          image={require("img/portoParalax.jpg").default}
-          ref={localizacaoRef}
-        >
-          <div className={classes.container}>
-            <GridContainer>
-              <GridItem hasTxtType="localizacao">
-                <div className={classes.brand}>
-                  <h1 className={(classes.title, "textParalax")}>Porto,</h1>
-                  <h1 className={(classes.title, "textParalax")}>
-                    uma localizaçao{" privilegiada"}
-                    {/* <span
-                      class="txt-type-localizacao"
-                      data-wait="2000"
-                      data-words='["privilegiada", "do caralho"]'
-                    ></span> */}
-                  </h1>
-                </div>
-              </GridItem>
-            </GridContainer>
-          </div>
-        </Parallax>
-        <Localizacao />
-        <Parallax
           image={require("img/acabamentosParalax.jpg").default}
           ref={acabamentosRef}
         >
@@ -163,6 +140,29 @@ function App(props) {
           </div>
         </Parallax>
         <Acabamentos />
+        <Parallax
+          image={require("img/portoParalax.jpg").default}
+          ref={localizacaoRef}
+        >
+          <div className={classes.container}>
+            <GridContainer>
+              <GridItem hasTxtType="localizacao">
+                <div className={classes.brand}>
+                  <h1 className={(classes.title, "textParalax")}>Porto,</h1>
+                  <h1 className={(classes.title, "textParalax")}>
+                    uma localizaçao{" privilegiada"}
+                    {/* <span
+                      class="txt-type-localizacao"
+                      data-wait="2000"
+                      data-words='["privilegiada", "do caralho"]'
+                    ></span> */}
+                  </h1>
+                </div>
+              </GridItem>
+            </GridContainer>
+          </div>
+        </Parallax>
+        <Localizacao />
         <Parallax image={require("img/folhas.jpg").default} ref={contactosRef}>
           <div className={classes.container}>
             <GridContainer>

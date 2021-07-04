@@ -226,7 +226,7 @@ export default function Footer(props) {
           </div> */}
 
           <div className="row">
-            <div className="d-flex justify-content-center align-items-center">
+            <div className="d-flex justify-content-center align-items-center footerText">
               &copy; SPRING GARDEN RESIDENCES {1900 + new Date().getYear()}
             </div>
           </div>

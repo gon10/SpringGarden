@@ -49,7 +49,7 @@ const ImageText = props => {
       case "left":
         return (
           <>
-            <div class="col-12 col-md-6 position-relative imageHover">
+            <div class="col-12 col-md-6 position-relative imageHover order-2 order-md-1">
               <figure><img
                 src={image}
                 alt="image"
@@ -62,7 +62,7 @@ const ImageText = props => {
               <img className="leaf2" src={folha2} alt="leaf"></img>
               <img className="leaf3" src={folha3} alt="leaf"></img>
             </div>
-            <div class="p-3 col-12 col-md-6 d-flex flex-column justify-content-center align-items-center">
+            <div class="p-3 col-12 col-md-6 d-flex flex-column justify-content-center align-items-center order-1 order-md-2">
               <h4 className="titleText">{title}</h4>
               <p className="summaryText">{summary}</p>
               <Link className={"nav-buton"} to={separatorlink}>
@@ -97,7 +97,7 @@ const ImageText = props => {
       case "noButtonLeft":
         return (
           <>
-            <div class="col-12 col-md-6 imageHover">
+            <div class="col-12 col-md-6 imageHover order-2 order-md-1">
               <figure><img
                 src={image}
                 alt="image"
@@ -107,7 +107,7 @@ const ImageText = props => {
               // }}
               ></img></figure>
             </div>
-            <div class="p-3 col-12 col-md-6 d-flex flex-column justify-content-center align-items-center">
+            <div class="p-3 col-12 col-md-6 d-flex flex-column justify-content-center align-items-center order-1 order-md-2">
               <h4 className="titleText">{title}</h4>
               <p className="summaryText">{summary}</p>
             </div>
@@ -117,7 +117,7 @@ const ImageText = props => {
       case "noButtonLeftExtraSummary":
         return (
           <>
-            <div className="col-12 col-md-6 imageHover">
+            <div className="col-12 col-md-6 imageHover order-2 order-md-1">
               <figure><img
                 src={image}
                 alt="image"
@@ -127,7 +127,7 @@ const ImageText = props => {
               // }}
               ></img></figure>
             </div>
-            <div class="p-3 col-12 col-md-6 d-flex flex-column justify-content-center align-items-center">
+            <div class="p-3 col-12 col-md-6 d-flex flex-column justify-content-center align-items-center order-1 order-md-2">
               <h4 className="titleText">{title}</h4>
               <p className="summaryText">{summary}</p>
               <p className="summaryText">{summary2}</p>
