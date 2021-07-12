@@ -613,20 +613,23 @@ button {
   transition: all 0.5s ease;
 
   color: #1d1d1d;
-  border: 2px solid #1d1d1d;
-  font-family: "Montserrat", sans-serif;
+  border: 1px solid #1d1d1d;
+  font-family: "Quicksand", sans-serif;
   text-align: center;
   line-height: 1;
   font-size: 17px;
   background-color: transparent;
   padding: 10px;
   outline: none;
-  border-radius: 4px;
+ border-radius: 2px;
 }
 button:hover {
-  color: #fff;
-  background-color: #c7ab62;
+  color: #c7ab62;
+  background-color: #f6f4f1;
+  border: 1px solid #c7ab62;
 }
+
+
 
 /*********************************************************************************/
 .titleText {

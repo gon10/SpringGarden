@@ -72,20 +72,20 @@ export default function Header(props) {
         "--background-image-url",
         `url(${backgroundHome})`
       )
-    } else if (windowsScrollTop >= rightLinks.props.tipologiasRef.current.offsetTop - 40 && windowsScrollTop < rightLinks.props.localizacaoRef.current.offsetTop - 40) {
+    } else if (windowsScrollTop >= rightLinks.props.tipologiasRef.current.offsetTop - 40 && windowsScrollTop < rightLinks.props.acabamentosRef.current.offsetTop - 40) {
       document.documentElement.style.setProperty(
         "--background-image-url",
         `url(${backgroundTipologias})`
       )
-    } else if (windowsScrollTop >= rightLinks.props.localizacaoRef.current.offsetTop - 40 && windowsScrollTop < rightLinks.props.acabamentosRef.current.offsetTop - 40) {
-      document.documentElement.style.setProperty(
-        "--background-image-url",
-        `url(${backgroundLocalizacao})`
-      )
-    } else if (windowsScrollTop >= rightLinks.props.acabamentosRef.current.offsetTop - 40 && windowsScrollTop < rightLinks.props.contactosRef.current.offsetTop - 40) {
+    } else if (windowsScrollTop >= rightLinks.props.acabamentosRef.current.offsetTop - 40 && windowsScrollTop < rightLinks.props.localizacaoRef.current.offsetTop - 40) {
       document.documentElement.style.setProperty(
         "--background-image-url",
         `url(${backgroundAcabamentos})`
+      )
+    } else if (windowsScrollTop >= rightLinks.props.localizacaoRef.current.offsetTop - 40 && windowsScrollTop < rightLinks.props.contactosRef.current.offsetTop - 40) {
+      document.documentElement.style.setProperty(
+        "--background-image-url",
+        `url(${backgroundLocalizacao})`
       )
     } else if (windowsScrollTop >= rightLinks.props.contactosRef.current.offsetTop - 40) {
       document.documentElement.style.setProperty(
