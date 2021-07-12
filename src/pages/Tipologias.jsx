@@ -1,16 +1,15 @@
-import React from "react"
-import styles from "assets/jss/material-kit-react/views/components.js"
-import { makeStyles } from "@material-ui/core/styles"
-import classNames from "classnames"
-import planta1 from "../img/planta1.PNG"
-import planta2 from "../img/planta2.png"
-import planta3 from "../img/planta3.PNG"
+import React from "react";
+import styles from "assets/jss/material-kit-react/views/components.js";
+import { makeStyles } from "@material-ui/core/styles";
+import classNames from "classnames";
+import planta1 from "../img/planta1.PNG";
+import planta2 from "../img/planta2.PNG";
+import planta3 from "../img/planta3.PNG";
 
-const useStyles = makeStyles(styles)
-
+const useStyles = makeStyles(styles);
 
 const Tipologias = React.forwardRef((props, ref) => {
-  const classes = useStyles()
+  const classes = useStyles();
   return (
     <div
       ref={ref}
@@ -22,9 +21,9 @@ const Tipologias = React.forwardRef((props, ref) => {
       <div className="p-3 d-flex flex-column justify-content-around justify-content-center align-items-center typologies">
         {/* <h1 className="springardenlogo">EM PERFEITA HARMONIA COM A NATUREZA...</h1> */}
         <h6 className="descubramais">
-          As tipologias vão desde o versátil T1 ao imponente T4 com enormes varandas e vistas maravilhosas sobre a cidade do Porto.
+          As tipologias vão desde o versátil T1 ao imponente T4 com enormes
+          varandas e vistas maravilhosas sobre a cidade do Porto.
         </h6>
-
       </div>
       <div class="row">
         <div class="col-sm-4 d-flex flex-column align-items-center">
@@ -45,10 +44,9 @@ const Tipologias = React.forwardRef((props, ref) => {
           <br />
           <button>Ver planta</button>
         </div>
-
       </div>
     </div>
-  )
-})
+  );
+});
 
-export default Tipologias
+export default Tipologias;
