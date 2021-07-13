@@ -1,47 +1,47 @@
-import { createRef } from "react"
-import GridContainer from "components/Grid/GridContainer"
-import GridItem from "components/Grid/GridItem"
-import HeaderLinks from "components/Header/HeaderLinks"
-import Parallax from "components/Parallax/Parallax"
-import classNames from "classnames"
-import { makeStyles } from "@material-ui/core/styles"
-import "./App.css"
-import Header from "./components/Header/Header"
-import ImageText from "./components/ImageText"
-import Navbar from "./components/Navbar"
-import Test from "./components/Test"
-import image from "./img/porto.jpg"
-import image2 from "./img/boavista.jpg"
+import { createRef } from "react";
+import GridContainer from "components/Grid/GridContainer";
+import GridItem from "components/Grid/GridItem";
+import HeaderLinks from "components/Header/HeaderLinks";
+import Parallax from "components/Parallax/Parallax";
+import classNames from "classnames";
+import { makeStyles } from "@material-ui/core/styles";
+import "./App.css";
+import Header from "./components/Header/Header";
+import ImageText from "./components/ImageText";
+import Navbar from "./components/Navbar";
+import Test from "./components/Test";
+import image from "./img/porto.jpg";
+import image2 from "./img/boavista.jpg";
 
-import styles from "assets/jss/material-kit-react/views/components.js"
-import SectionCarousel from "components/Carousel/SectionCarousel"
-import Footer from "components/Footer/Footer"
-import Home from "pages/Home"
+import styles from "assets/jss/material-kit-react/views/components.js";
+import SectionCarousel from "components/Carousel/SectionCarousel";
+import Footer from "components/Footer/Footer";
+import Home from "pages/Home";
 import {
   BrowserRouter as Router,
   Switch,
   Route,
   Link,
   Redirect
-} from "react-router-dom"
-import Tipologias from "pages/Tipologias"
-import Localizacao from "pages/Localizacao"
-import Acabamentos from "pages/Acabamentos"
-import Contactos from "pages/Contactos"
+} from "react-router-dom";
+import Tipologias from "pages/Tipologias";
+import Localizacao from "pages/Localizacao";
+import Acabamentos from "pages/Acabamentos";
+import Contactos from "pages/Contactos";
 
-import { Suspense } from "react"
+import { Suspense } from "react";
 
-const useStyles = makeStyles(styles)
+const useStyles = makeStyles(styles);
 
 function App(props) {
-  const { ...rest } = props
-  const classes = useStyles()
+  const { ...rest } = props;
+  const classes = useStyles();
 
-  const homeRef = createRef()
-  const tipologiasRef = createRef()
-  const localizacaoRef = createRef()
-  const acabamentosRef = createRef()
-  const contactosRef = createRef()
+  const homeRef = createRef();
+  const tipologiasRef = createRef();
+  const localizacaoRef = createRef();
+  const acabamentosRef = createRef();
+  const contactosRef = createRef();
 
   return (
     <Suspense fallback="loading">
@@ -93,7 +93,11 @@ function App(props) {
             </GridContainer>
           </div>
         </Parallax>
-        <Home />
+        <Home
+          tipologiasRef={tipologiasRef}
+          localizacaoRef={localizacaoRef}
+          acabamentosRef={acabamentosRef}
+        />
         <Parallax
           image={require("img/tipologiasParalax.jpg").default}
           ref={tipologiasRef}
@@ -203,7 +207,7 @@ function App(props) {
         <Footer />
       </Router>
     </Suspense>
-  )
+  );
 }
 
-export default App
+export default App;

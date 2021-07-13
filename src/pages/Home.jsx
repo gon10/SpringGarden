@@ -1,28 +1,38 @@
-import React from "react"
+import React from "react";
 
-import ImageText from "../components/ImageText"
-import Navbar from "../components/Navbar"
-import Test from "../components/Test"
-import image from "../img/sala-1.jpg"
-import image2 from "../img/boavista.PNG"
-import Parallax from "components/Parallax/Parallax"
-import classNames from "classnames"
-import GridContainer from "components/Grid/GridContainer"
-import GridItem from "components/Grid/GridItem"
-import { makeStyles } from "@material-ui/core/styles"
-import styles from "assets/jss/material-kit-react/views/components.js"
-import SectionCarousel from "components/Carousel/SectionCarousel"
-import { useTranslation } from "react-i18next"
-import homeImage from "../img/logo-removebg.png"
-import homeImageLeafes from "../img/6437685_preview.png"
-import { Height } from "@material-ui/icons"
+import ImageText from "../components/ImageText";
+import Navbar from "../components/Navbar";
+import Test from "../components/Test";
+import image from "../img/sala-1.jpg";
+import image2 from "../img/boavista.PNG";
+import Parallax from "components/Parallax/Parallax";
+import classNames from "classnames";
+import GridContainer from "components/Grid/GridContainer";
+import GridItem from "components/Grid/GridItem";
+import { makeStyles } from "@material-ui/core/styles";
+import styles from "assets/jss/material-kit-react/views/components.js";
+import SectionCarousel from "components/Carousel/SectionCarousel";
+import { useTranslation } from "react-i18next";
+import homeImage from "../img/logo-removebg.png";
+import homeImageLeafes from "../img/6437685_preview.png";
+import { Height } from "@material-ui/icons";
 
-const useStyles = makeStyles(styles)
+const useStyles = makeStyles(styles);
 
 const Home = React.forwardRef((props, ref) => {
-  const { t, i18n } = useTranslation()
-  const { ...rest } = props
-  const classes = useStyles()
+  const { t, i18n } = useTranslation();
+  const { tipologiasRef, localizacaoRef, acabamentosRef, ...rest } = props;
+  const classes = useStyles();
+
+  const scrolling = instance => {
+    console.log("instance.current.attributes", instance);
+    // let node = document.getElementById(instance.current.id);
+    window.scrollTo({
+      top: instance.current.offsetTop,
+      behavior: "smooth"
+    });
+  };
+  console.log("tipologiasRef", tipologiasRef);
   return (
     <>
       {/* <Navbar /> */}
@@ -69,6 +79,7 @@ const Home = React.forwardRef((props, ref) => {
           direction="left"
           bgcolor="#f6f4f1"
           separatorlink="/tipologias"
+          scrollOnClick={() => scrolling(tipologiasRef)}
         ></ImageText>
 
         <ImageText
@@ -80,6 +91,7 @@ const Home = React.forwardRef((props, ref) => {
           direction="right"
           bgcolor="#f6f4f1"
           separatorlink="/localizacao"
+          scrollOnClick={() => scrolling(localizacaoRef)}
         ></ImageText>
 
         <ImageText
@@ -91,10 +103,11 @@ const Home = React.forwardRef((props, ref) => {
           direction="left"
           bgcolor="#f6f4f1"
           separatorlink="/acabamentos"
+          scrollOnClick={() => scrolling(acabamentosRef)}
         ></ImageText>
       </div>
     </>
-  )
-})
+  );
+});
 
-export default Home
+export default Home;
