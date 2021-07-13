@@ -1,16 +1,16 @@
-import React from "react"
-import styles from "assets/jss/material-kit-react/views/components.js"
-import { makeStyles } from "@material-ui/core/styles"
-import classNames from "classnames"
-import planta1 from "../img/planta1.PNG"
-import planta2 from "../img/planta2.png"
-import planta3 from "../img/planta3.PNG"
-import { Link } from "react-router-dom"
+import React from "react";
+import styles from "assets/jss/material-kit-react/views/components.js";
+import { makeStyles } from "@material-ui/core/styles";
+import classNames from "classnames";
+import planta1 from "../img/planta1.PNG";
+import planta2 from "../img/planta2.png";
+import planta3 from "../img/planta3.PNG";
+import { Link } from "react-router-dom";
 
-const useStyles = makeStyles(styles)
+const useStyles = makeStyles(styles);
 
 const Tipologias = React.forwardRef((props, ref) => {
-  const classes = useStyles()
+  const classes = useStyles();
   return (
     <div
       ref={ref}
@@ -62,7 +62,7 @@ const Tipologias = React.forwardRef((props, ref) => {
         </div>
       </div>
     </div>
-  )
-})
+  );
+});
 
-export default Tipologias
+export default Tipologias;

@@ -1,14 +1,14 @@
-import React from "react"
-import styles from "assets/jss/material-kit-react/views/components.js"
-import { makeStyles } from "@material-ui/core/styles"
-import classNames from "classnames"
-import ImageText from "../components/ImageText"
-import imageStand from "../img/stand.jpg"
-import SectionCarousel from "components/Carousel/SectionCarousel"
-const useStyles = makeStyles(styles)
+import React from "react";
+import styles from "assets/jss/material-kit-react/views/components.js";
+import { makeStyles } from "@material-ui/core/styles";
+import classNames from "classnames";
+import ImageText from "../components/ImageText";
+import imageStand from "../img/stand.jpg";
+import SectionCarousel from "components/Carousel/SectionCarousel";
+const useStyles = makeStyles(styles);
 
 const Contactos = React.forwardRef((props, ref) => {
-  const classes = useStyles()
+  const classes = useStyles();
   return (
     <div
       ref={ref}
@@ -29,8 +29,7 @@ const Contactos = React.forwardRef((props, ref) => {
         bgcolor="#rgb(86 158 8 / 8%)"
       ></ImageText>
 
-      <div className="row">
-        {/* <SectionPills /> */}
+      {/* <div className="row">
         <div className="info col-12 col-md-4 d-flex flex-column justify-content-center align-items-center">
           <h3 className="titleText">Localização</h3>
           <p className="contactsText">R. Dom Afonso Henriques 827 Pedrouços, Maia</p>
@@ -43,10 +42,9 @@ const Contactos = React.forwardRef((props, ref) => {
           <h3 className="titleText">Telemóvel</h3>
           <p className="contactsText">+351 919429518 +351 913050087</p>
         </div>
-      </div>
-
+      </div> */}
     </div>
-  )
-})
+  );
+});
 
-export default Contactos
+export default Contactos;
