@@ -5,6 +5,7 @@ import classNames from "classnames"
 import planta1 from "../img/planta1.PNG"
 import planta2 from "../img/planta2.png"
 import planta3 from "../img/planta3.PNG"
+import { Link } from "react-router-dom"
 
 const useStyles = makeStyles(styles)
 
@@ -30,19 +31,34 @@ const Tipologias = React.forwardRef((props, ref) => {
           <h4 className="tipologiasText">T1</h4>
           <img src={planta1} alt="" className="w-100 imageTypologies"></img>
           <br />
-          <button>Ver planta</button>
+          <Link className={"imageTextBtn"}>
+            Ver planta<span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+          </Link>
         </div>
         <div class="col-sm-4 d-flex flex-column align-items-center">
           <h4 className="tipologiasText">T2</h4>
           <img src={planta2} alt="" className="w-100 imageTypologies"></img>
           <br />
-          <button>Ver planta</button>
+          <Link className={"imageTextBtn"}>
+            Ver planta<span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+          </Link>
         </div>
         <div class="col-sm-4 d-flex flex-column align-items-center">
           <h4 className="tipologiasText">T3</h4>
           <img src={planta3} alt="" className="w-100 imageTypologies"></img>
           <br />
-          <button>Ver planta</button>
+          <Link className={"imageTextBtn"}>
+            Ver planta<span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+          </Link>
         </div>
       </div>
     </div>

@@ -609,25 +609,25 @@
   font-family: "Noto Sans SC", sans-serif;
 }
 /*****Botao descubra mais!**************************************************************************/
-button {
-  transition: all 0.5s ease;
+// button {
+//   transition: all 0.5s ease;
 
-  color: #1d1d1d;
-  border: 1px solid #1d1d1d;
-  font-family: "Quicksand", sans-serif;
-  text-align: center;
-  line-height: 1;
-  font-size: 17px;
-  background-color: transparent;
-  padding: 10px;
-  outline: none;
- border-radius: 2px;
-}
-button:hover {
-  color: #c7ab62;
-  background-color: #f6f4f1;
-  border: 1px solid #c7ab62;
-}
+//   color: #1d1d1d;
+//   border: 1px solid #1d1d1d;
+//   font-family: "Quicksand", sans-serif;
+//   text-align: center;
+//   line-height: 1;
+//   font-size: 17px;
+//   background-color: transparent;
+//   padding: 10px;
+//   outline: none;
+//  border-radius: 2px;
+// }
+// button:hover {
+//   color: #c7ab62;
+//   background-color: #f6f4f1;
+//   border: 1px solid #c7ab62;
+// }
 
 
 
@@ -649,7 +649,7 @@ button:hover {
   text-align: justify;
   margin-left: 20px;
   margin-right: 20px;
-  font-size: 18px;
+  font-size: 16px;
   line-height: 1.5;
 }
 
