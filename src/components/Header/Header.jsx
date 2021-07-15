@@ -23,6 +23,8 @@ import backgroundTipologias from "../../img/tipologiasParalax.jpg"
 import backgroundLocalizacao from "../../img/portoParalax.jpg"
 import backgroundAcabamentos from "../../img/acabamentosParalax.jpg"
 import backgroundContactos from "../../img/folhas.jpg"
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faChevronUp } from '@fortawesome/free-solid-svg-icons'
 
 const useStyles = makeStyles(styles)
 
@@ -113,6 +115,17 @@ export default function Header(props) {
 
   return (
     <AppBar className={`${appBarClasses}`}>
+      <a
+        className="scrolTopButton"
+        onClick={() => {
+          window.scrollTo({
+            top: 0,
+            behavior: "smooth"
+          })
+        }}
+      >
+        <FontAwesomeIcon icon={faChevronUp} />
+      </a>
       <Toolbar className={classes.container}>
         {leftLinks !== undefined ? brandComponent : null}
         <div className={classes.flex}>
